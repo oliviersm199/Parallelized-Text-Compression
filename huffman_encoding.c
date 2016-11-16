@@ -1,11 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
+#include <unistd.h>
 
 
 // Sequential Implementation of Huffman Encoding sourced from Rosetta Code
-
  
 #define BYTES 256
  
@@ -149,20 +148,61 @@ void inttobits(int c, int n, char *s)
   }
 }
  
-const char *test = "this is an example for huffman encoding";
+char * load_file(char * path){
+  
+  FILE *fp;
+  fp = fopen(path,"rb");
+  unsigned long length;
+
+  char*buffer = 0; 
+
+  if(fp){
+    fseek(fp,0,SEEK_END);
+    length = ftell(fp);
+    rewind(fp);
+    buffer = (char *) malloc((length+1)*sizeof(char));
+    if(buffer){
+        fread(buffer,sizeof(char),length,fp);
+    }    
+    fclose(fp);
+  }
+  buffer[length] = '\0';
+  return buffer;
+}
+
  
-int main()
+int main(int argc,char* argv[])
 {
-  huffcode_t **r;
+  //validating that we have the correct number of arguments
+  if(argc < 2){
+    printf("Please provide a filepath to a file that may be huffman encoded.\n");
+    exit(-1);
+  }
+
+  //validating that the file exists
+  if( access(argv[1],F_OK) == - 1){
+    printf("Please provide an existing file to huffman encode\n");
+    exit(-2);
+  }
+
+  //loading the file into memory 
+  char *text = load_file(argv[1]);
+  
+  huffcode_t **r; 
   int i;
   char strbit[MAXBITSPERCODE];
   const char *p;
   long freqs[BYTES];
- 
   memset(freqs, 0, sizeof freqs);
  
-  p = test;
+  p = text;
+  
+
   while(*p != '\0') freqs[*p++]++;
+
+  //free memory for text since we already got the frequency and no longer require it.
+  free(text);
+
  
   r = create_huffman_codes(freqs);
  
@@ -172,8 +212,9 @@ int main()
       printf("%c (%d) %s\n", i, r[i]->code, strbit);
     }
   }
+
+
  
   free_huffman_codes(r);
- 
   return 0;
 }
