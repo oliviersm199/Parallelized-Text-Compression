@@ -209,16 +209,22 @@ int main(int argc,char* argv[])
 
   printf("size is %d\n\n", size);
 
-  #pragma omp parallel num_threads(1)
+  #pragma omp parallel num_threads(32)
   {
     int tid = omp_get_thread_num();
     int chunk_size = size / omp_get_num_threads();
     int start_idx = tid * chunk_size;
     int end_idx = (tid == omp_get_num_threads()-1) ? size : start_idx + chunk_size;
     int idx;
+    long myfreqs[BYTES] = {0};
     char *temp = &text[start_idx];
     for (idx = start_idx; idx < end_idx; idx++) {
-      freqs[*temp++]++;
+      myfreqs[*temp++]++;
+    }
+    int i;
+    for (i =0; i < BYTES; i++) {
+      #pragma omp atomic
+      freqs[i] += myfreqs[i];
     }
   }
   
