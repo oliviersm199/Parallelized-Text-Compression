@@ -2,7 +2,8 @@
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
-
+#include <omp.h>
+#include <time.h>
 
 // Sequential Implementation of Huffman Encoding sourced from Rosetta Code
  
@@ -173,6 +174,8 @@ char * load_file(char * path){
  
 int main(int argc,char* argv[])
 {
+  clock_t begin = clock();
+
   //validating that we have the correct number of arguments
   if(argc < 2){
     printf("Please provide a filepath to a file that may be huffman encoded.\n");
@@ -197,8 +200,32 @@ int main(int argc,char* argv[])
  
   p = text;
   
+  int size = 0;
+  int idx;
+  while(*p != '\0') {
+    *p++; 
+    size++;
+  }
 
-  while(*p != '\0') freqs[*p++]++;
+  printf("size is %d\n\n", size);
+
+  #pragma omp parallel num_threads(1)
+  {
+    int tid = omp_get_thread_num();
+    int chunk_size = size / omp_get_num_threads();
+    int start_idx = tid * chunk_size;
+    int end_idx = (tid == omp_get_num_threads()-1) ? size : start_idx + chunk_size;
+    int idx;
+    char *temp = &text[start_idx];
+    for (idx = start_idx; idx < end_idx; idx++) {
+      freqs[*temp++]++;
+    }
+  }
+  
+ /* while(*p != '\0') {
+    printf("Found %c\n", *p);
+    freqs[*p++]++;
+  } */
 
   //free memory for text since we already got the frequency and no longer require it.
   free(text);
@@ -216,5 +243,11 @@ int main(int argc,char* argv[])
 
  
   free_huffman_codes(r);
+
+  clock_t end = clock();
+
+  double time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
+  printf("Runtime: %f seconds\n", time_spent);
+
   return 0;
 }

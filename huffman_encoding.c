@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
-
+#include <time.h>
 
 // Sequential Implementation of Huffman Encoding sourced from Rosetta Code
  
@@ -173,6 +173,8 @@ char * load_file(char * path){
  
 int main(int argc,char* argv[])
 {
+  clock_t begin = clock();
+
   //validating that we have the correct number of arguments
   if(argc < 2){
     printf("Please provide a filepath to a file that may be huffman encoded.\n");
@@ -212,9 +214,12 @@ int main(int argc,char* argv[])
       printf("%c (%d) %s\n", i, r[i]->code, strbit);
     }
   }
-
-
  
   free_huffman_codes(r);
+
+  clock_t end = clock();
+
+  double time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
+  printf("Runtime: %f seconds\n", time_spent);
   return 0;
 }
