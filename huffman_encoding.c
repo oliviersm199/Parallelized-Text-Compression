@@ -202,18 +202,14 @@ void writeCompressedFile(char * targetString, FILE **filePointer, huffcode_t ***
     while(bufbits >=8)
     {
         bufbits -=8;
-	char value = (buffer >> bufbits);
-	printf("%x\n",value);
-	fputc((buffer >> bufbits),fp);	
+	fputc((buffer >> bufbits)&0xFF,fp);	
     }
   }
 
   //some left over bits, we know it's less than 8 
   if(bufbits > 0){
-	printf("Left Over Buf Bits %d\n",bufbits);
         char leftOver = buffer;
 	leftOver<<(8-bufbits);
-	printf("FinalCharacter:%du\n",leftOver);
         fputc(leftOver,fp); 
   }
 }
