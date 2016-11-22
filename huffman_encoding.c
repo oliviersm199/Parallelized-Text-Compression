@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
+#include <inttypes.h>
 #include <time.h>
 
 // Sequential Implementation of Huffman Encoding sourced from Rosetta Code
@@ -181,34 +182,40 @@ int load_file(char * path, char ** bufferPtr){
 
 
 /*
-  The char * buffer provided will first count how many bits it will need
-  to represent all of the letters, allocate a space in buffer which meets that in bytes,
-  copy bit by bit into the buffer and will only translate characters in targetString up to
-  numToTranslate characters. This method will return the number of bits used, which can be used
-  in other methods to execute proper bit shifting on the text.
+    This function will write a string to a file using our huffman encoding, writing byte by byte.
+    If a particular translation for a character has > 32 bits, then the function will not copy
+    correctly, since it uses a buffer of 32 bits to write to the file. 
 */
-int string_to_huffman_encoding(char ** bufferTarget,char * targetString, huffcode_t ***rInput,int numToTranslate){
+void writeCompressedFile(char * targetString, FILE **filePointer, huffcode_t ***rInput,int numToTranslate){
   huffcode_t **r = *rInput;
-  char * buffer = *bufferTarget;
-
-  int totalBitsUsed = 0;
-  for(int i = 0; i < numToTranslate;i++){
-    int targetChar = (int)*(targetString + i);
-    totalBitsUsed += r[targetChar]->nbits;
-  }
-
-  int totalBytes = totalBitsUsed / 8;
-  int remainderBits = totalBitsUsed % 8;
-
-  buffer = (char *)malloc(sizeof(char)*(totalBytes+1));
-  int bitsUsedSoFar = 0;
-  for(int i = 0; i < numToTranslate;i++){
-    int targetChar = (int)*(targetString + i);
-    printf("%c - %d",targetChar,targetChar);
-  }
+  FILE *fp = *filePointer;
   
-  // printf("TotalCompression:%d\n",totalBitsUsed);
-  return totalBitsUsed;
+  uint32_t buffer = 0;
+  int bufbits = 0;
+  for(int i = 0; i < numToTranslate;i++){
+    int targetChar = targetString[i];
+    int value = r[targetChar] -> code;
+    int nBits = r[targetChar] -> nbits;
+    buffer <<= nBits; // making room for the bits
+    bufbits += nBits; // increment the number of bits in the buffer
+    buffer |= value;  // saving hte value in the buffer 
+    while(bufbits >=8)
+    {
+        bufbits -=8;
+	char value = (buffer >> bufbits);
+	printf("%x\n",value);
+	fputc((buffer >> bufbits),fp);	
+    }
+  }
+
+  //some left over bits, we know it's less than 8 
+  if(bufbits > 0){
+	printf("Left Over Buf Bits %d\n",bufbits);
+        char leftOver = buffer;
+	leftOver<<(8-bufbits);
+	printf("FinalCharacter:%du\n",leftOver);
+        fputc(leftOver,fp); 
+  }
 }
 
 
@@ -236,7 +243,10 @@ int main(int argc,char* argv[])
   huffcode_t **r;
   int i;
   char strbit[MAXBITSPERCODE];
-  
+ 
+
+
+  printf("Total Size: %d\n",textLength); 
   //get the frequency of characters in the text
   long freqs[BYTES];
 
@@ -252,15 +262,17 @@ int main(int argc,char* argv[])
   for(i=0; i < BYTES; i++) {
     if ( r[i] != NULL ) {
       inttobits(r[i]->code, r[i]->nbits, strbit);
-      printf("%c (%d) %s\n", i, r[i]->code, strbit);
+      printf("%d (%d) %s\n",i, r[i]->code, strbit);
     }
   }
- 
-  char * buffer;
-  int bitsUsed = string_to_huffman_encoding(&buffer,p,&r,textLength);
 
+  
+  FILE * fp;
+  fp = fopen(argv[2],"wb");
+  writeCompressedFile(p,&fp,&r,textLength);
+
+  fclose(fp);
   free_huffman_codes(r);
-
   clock_t end = clock();
 
   double time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
