@@ -2,11 +2,11 @@
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
-#include <time.h>
+#include <math.h>
 
 // Sequential Implementation of Huffman Encoding sourced from Rosetta Code
 
-#define BYTES 256
+#define BYTES 65336
 
 struct huffcode {
   int nbits;
@@ -39,7 +39,7 @@ static void _heap_destroy(heap_t *heap)
   free(heap);
 }
 
-#define swap_(I,J) do { int t_; t_ = a[(I)];	\
+#define swap_(I,J) do { int t_; t_ = a[(I)];    \
       a[(I)] = a[(J)]; a[(J)] = t_; } while(0)
 static void _heap_sort(heap_t *heap)
 {
@@ -94,7 +94,9 @@ huffcode_t **create_huffman_codes(long *freqs)
   heap = _heap_create(BYTES*2, efreqs);
   if ( heap == NULL ) return NULL;
 
-  for(i=0; i < BYTES; i++) if ( efreqs[i] > 0 ) _heap_add(heap, i);
+  for(i=0; i < BYTES; i++) {
+    if ( efreqs[i] > 0 ) _heap_add(heap, i);
+  }
 
   while( heap->n > 1 )
   {
@@ -113,6 +115,7 @@ huffcode_t **create_huffman_codes(long *freqs)
   codes = malloc(sizeof(huffcode_t *)*BYTES);
 
   int bc, bn, ix;
+
   for(i=0; i < BYTES; i++) {
     bc=0; bn=0;
     if ( efreqs[i] == 0 ) { codes[i] = NULL; continue; }
@@ -148,19 +151,14 @@ void inttobits(int c, int n, char *s)
   }
 }
 
-/*
-  returns length of string loaded into file and sets buffer equal to path
-  takes a double pointer in return to the calling function and set the value of
-  the string to the value uploaded in this method.
-*/
-int load_file(char * path, char ** bufferPtr){
-  //deference to make easier to reference
-  char *buffer = *bufferPtr;
+char * load_file(char * path){
 
-  // opening file, checking the length and reading it into the buffer.
   FILE *fp;
   fp = fopen(path,"rb");
-  int length;
+  unsigned long length;
+
+  char*buffer = 0;
+
   if(fp){
     fseek(fp,0,SEEK_END);
     length = ftell(fp);
@@ -171,99 +169,109 @@ int load_file(char * path, char ** bufferPtr){
     }
     fclose(fp);
   }
-  //setting the last character to the terminating character
-  *(buffer + length) = '\0';
-
-  //resetting bufferPtr to point to buffer and returning the length
-  *bufferPtr = buffer;
-  return length;
+  buffer[length] = '\0';
+  return buffer;
 }
-
-
-/*
-  The char * buffer provided will first count how many bits it will need
-  to represent all of the letters, allocate a space in buffer which meets that in bytes,
-  copy bit by bit into the buffer and will only translate characters in targetString up to
-  numToTranslate characters. This method will return the number of bits used, which can be used
-  in other methods to execute proper bit shifting on the text.
-*/
-int string_to_huffman_encoding(char ** bufferTarget,char * targetString, huffcode_t ***rInput,int numToTranslate){
-  huffcode_t **r = *rInput;
-  char * buffer = *bufferTarget;
-
-  int totalBitsUsed = 0;
-  for(int i = 0; i < numToTranslate;i++){
-    int targetChar = (int)*(targetString + i);
-    totalBitsUsed += r[targetChar]->nbits;
-  }
-
-  int totalBytes = totalBitsUsed / 8;
-  int remainderBits = totalBitsUsed % 8;
-
-  buffer = (char *)malloc(sizeof(char)*(totalBytes+1));
-  int bitsUsedSoFar = 0;
-  for(int i = 0; i < numToTranslate;i++){
-    int targetChar = (int)*(targetString + i);
-    printf("%c - %d",targetChar,targetChar);
-  }
-  
-  // printf("TotalCompression:%d\n",totalBitsUsed);
-  return totalBitsUsed;
-}
-
 
 
 int main(int argc,char* argv[])
 {
-  clock_t begin = clock();
-
   //validating that we have the correct number of arguments
-  if(argc < 3){
-    printf("Please provide a filepath to a file that may be huffman encoded as well as a name for the compressed file.\n");
+  if(argc < 2){
+    printf("Please provide a filepath to a file that may be huffman encoded.\n");
     exit(-1);
   }
 
   //validating that the file exists
-  if( access(argv[1],F_OK) == - 1){
+  if( access(argv[2],F_OK) == - 1){
     printf("Please provide an existing file to huffman encode\n");
     exit(-2);
   }
 
-  //loading the file from memory into p and getting the size
-  char a;
-  char *p;
-  int textLength = load_file(argv[1],&p);
-  huffcode_t **r;
-  int i;
+  if(argc == 2){
+	printf("Please provide the number of bytes you want to examine at the time");
+    exit(-1);
+  }
+
+  //loading the file into memory
+  char *text = load_file(argv[2]);
+  int num_bits = atoi(argv[1]);
+
+  huffcode_t **r, **e;
+  int i,j;
   char strbit[MAXBITSPERCODE];
-  
-  //get the frequency of characters in the text
-  long freqs[BYTES];
+  const char *p;
+ 
+  long bitword_freqs[BYTES];
+  memset(bitword_freqs, 0, sizeof bitword_freqs);
 
-  memset(freqs, 0, sizeof freqs);
-  while(*p != '\0') freqs[*p++]++;
+  p = text;
+  int n = strlen(p);
+  char c;
+  while(*p != '\0') {
+	
+	int bitword = 0x0000;
 
-  //resetting p back to beginning
-  p = p - textLength;
+	for(i = 0; i < num_bits; i++){
+		c = *p;
+		for (j = 0; j < 8; j++) {
+			bitword <<= 1;
+			bitword |= !!((c << j) & 0x80);
+		}
 
-  //creating the huffman codes by generating a priority queue from the frequency of
-  //the characters in the text
-  r = create_huffman_codes(freqs);
-  for(i=0; i < BYTES; i++) {
-    if ( r[i] != NULL ) {
-      inttobits(r[i]->code, r[i]->nbits, strbit);
-      printf("%c (%d) %s\n", i, r[i]->code, strbit);
+		*p++;
+    }
+	
+	bitword_freqs[bitword]++;    
+	
+  }
+
+  //free memory for text since we already got the frequency and no longer require it.
+  free(text);
+
+  e = create_huffman_codes(bitword_freqs);
+  long int new_storage = 0;
+
+  printf("Bit number    | Frequency\n");
+  /*
+  for(i=0; i < BYTES; i++){
+    printf("%d: %li\n", i, bitword_freqs[i]);
+  }
+  */
+  printf("\nBit number 	(Value of encoding) Encoding\n");
+  for(i=0; i < BYTES; i++){
+    if(e[i] != NULL){
+      inttobits(e[i]->code, e[i]->nbits, strbit);
+      new_storage += bitword_freqs[i]*strlen(strbit);
+  //    printf("%d 	(%d) %s\n", i, e[i]->code, strbit);
     }
   }
- 
-  char * buffer;
-  int bitsUsed = string_to_huffman_encoding(&buffer,p,&r,textLength);
+  free_huffman_codes(e);
+  printf("\n\n");
+  printf("Text # chars: %d\n",n);
+  printf("Storage used: %d bits\n",n*8);
 
-  free_huffman_codes(r);
-
-  clock_t end = clock();
-
-  double time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
-  printf("Runtime: %f seconds\n", time_spent);
+  printf("New storage : %li bits\n", new_storage);
   return 0;
 }
+                                                                                                                    
+
+
+/*
+
+int main(){
+	char word [] = "Hello World. My name is Eduardo";
+	int n = strlen(word);
+	int i, j;
+	
+	for (j = 0; j < n; j++){
+		char c = (char) word[j];
+		printf("%c: ",c);
+		for (i = 0; i < 8; i++) {
+      			printf("%d", !!((c << i) & 0x80));
+		}
+		printf("%s", "\n");
+	}
+	return 0;
+}
+*/
