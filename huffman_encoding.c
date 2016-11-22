@@ -5,22 +5,22 @@
 #include <time.h>
 
 // Sequential Implementation of Huffman Encoding sourced from Rosetta Code
- 
+
 #define BYTES 256
- 
+
 struct huffcode {
   int nbits;
   int code;
 };
 typedef struct huffcode huffcode_t;
- 
+
 struct huffheap {
   int *h;
   int n, s, cs;
   long *f;
 };
 typedef struct huffheap heap_t;
- 
+
 /* heap handling funcs */
 static heap_t *_heap_create(int s, long *f)
 {
@@ -32,20 +32,20 @@ static heap_t *_heap_create(int s, long *f)
   h->f = f;
   return h;
 }
- 
+
 static void _heap_destroy(heap_t *heap)
 {
   free(heap->h);
   free(heap);
 }
- 
+
 #define swap_(I,J) do { int t_; t_ = a[(I)];	\
       a[(I)] = a[(J)]; a[(J)] = t_; } while(0)
 static void _heap_sort(heap_t *heap)
 {
   int i=1, j=2; /* gnome sort */
   int *a = heap->h;
- 
+
   while(i < heap->n) { /* smaller values are kept at the end */
     if ( heap->f[a[i-1]] >= heap->f[a[i]] ) {
       i = j; j++;
@@ -57,7 +57,7 @@ static void _heap_sort(heap_t *heap)
   }
 }
 #undef swap_
- 
+
 static void _heap_add(heap_t *heap, int c)
 {
   if ( (heap->n + 1) > heap->s ) {
@@ -68,7 +68,7 @@ static void _heap_add(heap_t *heap, int c)
   heap->n++;
   _heap_sort(heap);
 }
- 
+
 static int _heap_remove(heap_t *heap)
 {
   if ( heap->n > 0 ) {
@@ -77,7 +77,7 @@ static int _heap_remove(heap_t *heap)
   }
   return -1;
 }
- 
+
 /* huffmann code generator */
 huffcode_t **create_huffman_codes(long *freqs)
 {
@@ -87,15 +87,15 @@ huffcode_t **create_huffman_codes(long *freqs)
   int preds[BYTES*2];
   int i, extf=BYTES;
   int r1, r2;
- 
+
   memcpy(efreqs, freqs, sizeof(long)*BYTES);
   memset(&efreqs[BYTES], 0, sizeof(long)*BYTES);
- 
+
   heap = _heap_create(BYTES*2, efreqs);
   if ( heap == NULL ) return NULL;
- 
+
   for(i=0; i < BYTES; i++) if ( efreqs[i] > 0 ) _heap_add(heap, i);
- 
+
   while( heap->n > 1 )
   {
     r1 = _heap_remove(heap);
@@ -109,9 +109,9 @@ huffcode_t **create_huffman_codes(long *freqs)
   r1 = _heap_remove(heap);
   preds[r1] = r1;
   _heap_destroy(heap);
- 
+
   codes = malloc(sizeof(huffcode_t *)*BYTES);
- 
+
   int bc, bn, ix;
   for(i=0; i < BYTES; i++) {
     bc=0; bn=0;
@@ -128,17 +128,17 @@ huffcode_t **create_huffman_codes(long *freqs)
   }
   return codes;
 }
- 
+
 void free_huffman_codes(huffcode_t **c)
 {
   int i;
- 
+
   for(i=0; i < BYTES; i++) free(c[i]);
   free(c);
 }
- 
+
 #define MAXBITSPERCODE 100
- 
+
 void inttobits(int c, int n, char *s)
 {
   s[n] = 0;
@@ -147,15 +147,20 @@ void inttobits(int c, int n, char *s)
     c >>= 1; n--;
   }
 }
- 
-char * load_file(char * path){
-  
+
+/*
+  returns length of string loaded into file and sets buffer equal to path
+  takes a double pointer in return to the calling function and set the value of
+  the string to the value uploaded in this method.
+*/
+int load_file(char * path, char ** bufferPtr){
+  //deference to make easier to reference
+  char *buffer = *bufferPtr;
+
+  // opening file, checking the length and reading it into the buffer.
   FILE *fp;
   fp = fopen(path,"rb");
-  unsigned long length;
-
-  char*buffer = 0; 
-
+  int length;
   if(fp){
     fseek(fp,0,SEEK_END);
     length = ftell(fp);
@@ -163,21 +168,58 @@ char * load_file(char * path){
     buffer = (char *) malloc((length+1)*sizeof(char));
     if(buffer){
         fread(buffer,sizeof(char),length,fp);
-    }    
+    }
     fclose(fp);
   }
-  buffer[length] = '\0';
-  return buffer;
+  //setting the last character to the terminating character
+  *(buffer + length) = '\0';
+
+  //resetting bufferPtr to point to buffer and returning the length
+  *bufferPtr = buffer;
+  return length;
 }
 
- 
+
+/*
+  The char * buffer provided will first count how many bits it will need
+  to represent all of the letters, allocate a space in buffer which meets that in bytes,
+  copy bit by bit into the buffer and will only translate characters in targetString up to
+  numToTranslate characters. This method will return the number of bits used, which can be used
+  in other methods to execute proper bit shifting on the text.
+*/
+int string_to_huffman_encoding(char ** bufferTarget,char * targetString, huffcode_t ***rInput,int numToTranslate){
+  huffcode_t **r = *rInput;
+  char * buffer = *bufferTarget;
+
+  int totalBitsUsed = 0;
+  for(int i = 0; i < numToTranslate;i++){
+    int targetChar = (int)*(targetString + i);
+    totalBitsUsed += r[targetChar]->nbits;
+  }
+
+  int totalBytes = totalBitsUsed / 8;
+  int remainderBits = totalBitsUsed % 8;
+
+  buffer = (char *)malloc(sizeof(char)*(totalBytes+1));
+  int bitsUsedSoFar = 0;
+  for(int i = 0; i < numToTranslate;i++){
+    int targetChar = (int)*(targetString + i);
+    printf("%c - %d",targetChar,targetChar);
+  }
+  
+  // printf("TotalCompression:%d\n",totalBitsUsed);
+  return totalBitsUsed;
+}
+
+
+
 int main(int argc,char* argv[])
 {
   clock_t begin = clock();
 
   //validating that we have the correct number of arguments
-  if(argc < 2){
-    printf("Please provide a filepath to a file that may be huffman encoded.\n");
+  if(argc < 3){
+    printf("Please provide a filepath to a file that may be huffman encoded as well as a name for the compressed file.\n");
     exit(-1);
   }
 
@@ -187,27 +229,26 @@ int main(int argc,char* argv[])
     exit(-2);
   }
 
-  //loading the file into memory 
-  char *text = load_file(argv[1]);
-  
-  huffcode_t **r; 
+  //loading the file from memory into p and getting the size
+  char a;
+  char *p;
+  int textLength = load_file(argv[1],&p);
+  huffcode_t **r;
   int i;
   char strbit[MAXBITSPERCODE];
-  const char *p;
-  long freqs[BYTES];
-  memset(freqs, 0, sizeof freqs);
- 
-  p = text;
   
+  //get the frequency of characters in the text
+  long freqs[BYTES];
 
+  memset(freqs, 0, sizeof freqs);
   while(*p != '\0') freqs[*p++]++;
 
-  //free memory for text since we already got the frequency and no longer require it.
-  free(text);
+  //resetting p back to beginning
+  p = p - textLength;
 
- 
+  //creating the huffman codes by generating a priority queue from the frequency of
+  //the characters in the text
   r = create_huffman_codes(freqs);
- 
   for(i=0; i < BYTES; i++) {
     if ( r[i] != NULL ) {
       inttobits(r[i]->code, r[i]->nbits, strbit);
@@ -215,6 +256,9 @@ int main(int argc,char* argv[])
     }
   }
  
+  char * buffer;
+  int bitsUsed = string_to_huffman_encoding(&buffer,p,&r,textLength);
+
   free_huffman_codes(r);
 
   clock_t end = clock();
