@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
+#include <errno.h>
 #include <inttypes.h>
 #include <time.h>
 
@@ -186,13 +187,33 @@ int load_file(char * path, char ** bufferPtr){
     If a particular translation for a character has > 32 bits, then the function will not copy
     correctly, since it uses a buffer of 32 bits to write to the file. 
 */
-void writeCompressedFile(char * targetString, FILE **filePointer, huffcode_t ***rInput,int numToTranslate){
-  huffcode_t **r = *rInput;
-  FILE *fp = *filePointer;
+void writeCompressedFile(char * targetString, char *fileName, huffcode_t ***dictionary,int size){
+  huffcode_t **r = *dictionary;
+  FILE *fp = fopen(fileName,"wb");
   
+  //get the size of our alphabet
+  uint32_t alphabetSize = 0;
+  for(int i=0; i < BYTES; i++) {
+    if ( r[i] != NULL ) {
+      alphabetSize++;  
+    }
+  }
+  fwrite(&alphabetSize,4,1,fp); 
+
+  //write the alphabet down in the following way:
+  // alphabetnumBitsRepresentbits  where alphabet = 8 bits, numBits = 32 and bitsRepresent = 32 bits  
+  for(int i=0;i<BYTES;i++){
+    if(r[i] != NULL){
+	fwrite(&i,1,1,fp); //writing the character to file
+	fwrite(&r[i]->nbits,4,1,fp); //writing the number of bits in representation
+	fwrite(&r[i]->code,4,1,fp); // writing the bits in representation
+    }
+  }
+
+  // write the actual text to the file 
   uint32_t buffer = 0;
   int bufbits = 0;
-  for(int i = 0; i < numToTranslate;i++){
+  for(int i = 0; i < size;i++){
     int targetChar = targetString[i];
     int value = r[targetChar] -> code;
     int nBits = r[targetChar] -> nbits;
@@ -205,15 +226,22 @@ void writeCompressedFile(char * targetString, FILE **filePointer, huffcode_t ***
 	fputc((buffer >> bufbits)&0xFF,fp);	
     }
   }
-
   //some left over bits, we know it's less than 8 
   if(bufbits > 0){
         char leftOver = buffer;
 	leftOver<<(8-bufbits);
         fputc(leftOver,fp); 
   }
+
+  fclose(fp);
 }
 
+//uncompress the file 
+void uncompressFile(char * fileName){
+	// open the file pointer
+	FILE *fp = fopen(fileName,"rb");
+	
+}
 
 
 int main(int argc,char* argv[])
@@ -242,7 +270,6 @@ int main(int argc,char* argv[])
  
 
 
-  printf("Total Size: %d\n",textLength); 
   //get the frequency of characters in the text
   long freqs[BYTES];
 
@@ -255,19 +282,9 @@ int main(int argc,char* argv[])
   //creating the huffman codes by generating a priority queue from the frequency of
   //the characters in the text
   r = create_huffman_codes(freqs);
-  for(i=0; i < BYTES; i++) {
-    if ( r[i] != NULL ) {
-      inttobits(r[i]->code, r[i]->nbits, strbit);
-      printf("%d (%d) %s\n",i, r[i]->code, strbit);
-    }
-  }
 
-  
-  FILE * fp;
-  fp = fopen(argv[2],"wb");
-  writeCompressedFile(p,&fp,&r,textLength);
+  writeCompressedFile(p,argv[2],&r,textLength);
 
-  fclose(fp);
   free_huffman_codes(r);
   clock_t end = clock();
 
