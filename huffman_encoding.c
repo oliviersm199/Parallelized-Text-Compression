@@ -240,7 +240,37 @@ void writeCompressedFile(char * targetString, char *fileName, huffcode_t ***dict
 void uncompressFile(char * fileName){
 	// open the file pointer
 	FILE *fp = fopen(fileName,"rb");
+	int errnum;
+	fp = fopen(fileName,"rb");
+        //validate that file was opened successfully	
+	if(fp == NULL){
+		errnum = errno;
+		fprintf(stderr,"Error Code: %d\n",errno);
+		perror("Error");
+		fprintf(stderr,"Error opening file: %s\n",strerror(errnum));
+		exit(errnum);
+	}
+
+	//attempt to read in first 32 bits which represent the size of the alphabet. 
+	uint32_t alphabetSize = 0;
+	fread(&alphabetSize,4,1,fp);
+	printf("Alphabet Size Uncompressed: %d\n",alphabetSize);
+
+	//create space in memory for alphabetSize alphabet dictionary
+	huffcode_t **r = malloc(sizeof(huffcode_t *)*BYTES);
 	
+	char tempchar;
+	int nbits;
+	int symbol;
+	char * strbit = 0;
+	for(int i = 0; i < alphabetSize;i++){
+		fread(&tempchar,1,1,fp);
+		fread(&nbits,4,1,fp);
+		fread(&symbol,4,1,fp);
+		printf("Symbol:%c NumBits:%d Symbol:%d\n",tempchar,nbits,symbol);	
+	}
+	//done
+	fclose(fp);
 }
 
 
@@ -284,6 +314,9 @@ int main(int argc,char* argv[])
   r = create_huffman_codes(freqs);
 
   writeCompressedFile(p,argv[2],&r,textLength);
+
+  uncompressFile(argv[2]);
+  //from here the file should exist. Lets
 
   free_huffman_codes(r);
   clock_t end = clock();
