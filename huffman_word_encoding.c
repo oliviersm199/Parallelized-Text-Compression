@@ -9,8 +9,8 @@
 #define BYTES 2000
  
 struct huffcode {
-  int nbits;
-  int code;
+  long int nbits;
+  long int code;
 };
 typedef struct huffcode huffcode_t;
  
@@ -179,14 +179,14 @@ int calculate_frequencies(char *str, long *freqs, char words[BYTES][500], int si
     printf("string length is %d\n", size);
     for (i = 0; i < size; i++)
     {
-        if ((str[i] == ' ') || (str[i] == ',') || (str[i] == '.'))
+        if (str[i] == ' ')
         {
             space++;
         }
     }
     for (i = 0, j = 0, k = 0;j < size; j++)
     {
-        if ((str[j] == ' ') ||(str[j] == 44) || (str[j] == 46))  
+        if (str[j] == ' ')  
         {    
             p[i][k] = '\0';
             i++;
@@ -223,7 +223,6 @@ int calculate_frequencies(char *str, long *freqs, char words[BYTES][500], int si
             if (strcmp(ptr1[i], p[j]) == 0)
                 c++;
         }
-        printf("%s -> %d times\n", ptr1[i], c);
         strcpy(words[i],ptr1[i]);
         freqs[i] = c;
         c = 0;
@@ -254,7 +253,7 @@ int main(int argc,char* argv[])
   int i;
   char strbit[MAXBITSPERCODE];
   const char *p;
-  long freqs[BYTES];
+  long freqs[BYTES] = {0};
   char words[BYTES][500];
   memset(freqs, 0, sizeof freqs);
  
@@ -282,7 +281,7 @@ int main(int argc,char* argv[])
       //printf("%ld\n", freqs[i]);
       inttobits(r[i]->code, r[i]->nbits, strbit);
       new_storage += freqs[i]*strlen(strbit);
-      printf("%s (%d) %s\n", words[i], r[i]->code, strbit);
+      printf("%s, freq = %li: (%li) %s\n", words[i], freqs[i], r[i]->code, strbit);
     }
   }
  
@@ -296,5 +295,6 @@ int main(int argc,char* argv[])
   printf("Text # chars: %d\n",size);
   printf("Storage used: %d bits\n",size*8);
   printf("New storage : %li bits\n", new_storage);
+  printf("ratio       : %li %%\n", (100 - (100* new_storage/(size*8))));
   return 0;
 }

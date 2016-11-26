@@ -1,0 +1,1894 @@
+string length is 10274
+Now -> 2 times
+indulgence -> 2 times
+dissimilar -> 3 times
+for -> 3 times
+his -> 10 times
+thoroughly -> 1 times
+has -> 7 times
+terminated. -> 1 times
+Agreement -> 1 times
+offending -> 2 times
+commanded -> 1 times
+my -> 6 times
+an. -> 1 times
+Change -> 1 times
+wholly -> 1 times
+say -> 5 times
+why -> 3 times
+eldest -> 2 times
+period. -> 1 times
+Are -> 1 times
+projection -> 1 times
+put -> 3 times
+celebrated -> 1 times
+particular -> 1 times
+unreserved -> 3 times
+joy -> 4 times
+unsatiable -> 1 times
+its. -> 2 times
+In -> 5 times
+then -> 1 times
+dare -> 3 times
+good -> 1 times
+am -> 7 times
+rose -> 1 times
+bred -> 1 times
+or. -> 1 times
+On -> 4 times
+in -> 15 times
+nearer -> 1 times
+square -> 1 times
+wanted. -> 1 times
+Do -> 2 times
+eduardo4ever -> 1 times
+so -> 17 times
+written -> 1 times
+as -> 10 times
+raising -> 1 times
+parlors -> 1 times
+spirits -> 2 times
+mr -> 8 times
+elderly. -> 1 times
+Made -> 1 times
+late -> 1 times
+of -> 9 times
+high -> 1 times
+left -> 1 times
+hold. -> 2 times
+Carried -> 1 times
+females -> 2 times
+up -> 8 times
+highest -> 1 times
+calling. -> 2 times
+Limits -> 1 times
+marked -> 1 times
+led -> 4 times
+silent -> 4 times
+dining -> 1 times
+her -> 11 times
+she -> 8 times
+far. -> 1 times
+Sir -> 2 times
+but -> 6 times
+elegance -> 1 times
+marriage -> 2 times
+dwelling -> 2 times
+likewise -> 3 times
+position -> 2 times
+old -> 4 times
+pleasure -> 2 times
+men. -> 3 times
+Dissimilar -> 1 times
+themselves -> 1 times
+simplicity -> 2 times
+no -> 11 times
+contrasted -> 1 times
+as. -> 3 times
+Delay -> 1 times
+great -> 1 times
+day -> 5 times
+hours -> 3 times
+Stuff -> 1 times
+front -> 1 times
+to -> 13 times
+do -> 17 times
+allow -> 1 times
+asked -> 3 times
+he. -> 4 times
+For -> 3 times
+though -> 3 times
+result -> 4 times
+and -> 6 times
+talent -> 1 times
+add -> 6 times
+are -> 3 times
+parish -> 1 times
+valley. -> 1 times
+Songs -> 1 times
+oh -> 6 times
+other -> 2 times
+avoid -> 1 times
+it -> 12 times
+woman -> 1 times
+style. -> 2 times
+myself -> 1 times
+family -> 1 times
+if -> 5 times
+be -> 5 times
+agreed. -> 1 times
+Gay -> 2 times
+collected -> 1 times
+son -> 2 times
+him -> 10 times
+knowledge -> 1 times
+delivered -> 2 times
+put. -> 1 times
+Added -> 1 times
+would -> 1 times
+end -> 5 times
+ask -> 5 times
+sight -> 1 times
+saw -> 5 times
+dried -> 1 times
+house. -> 1 times
+Property -> 1 times
+expenses -> 1 times
+yourself -> 3 times
+occasion -> 1 times
+endeavor -> 1 times
+two -> 2 times
+may -> 3 times
+judgment -> 2 times
+she. -> 2 times
+Me -> 2 times
+soon -> 2 times
+rank -> 2 times
+most -> 1 times
+head -> 1 times
+time -> 1 times
+tore. -> 1 times
+Colonel -> 1 times
+or -> 10 times
+passage -> 2 times
+ability. -> 1 times
+Picture -> 1 times
+removal -> 2 times
+detract -> 1 times
+earnest -> 1 times
+is -> 5 times
+by. -> 3 times
+Esteems -> 1 times
+met -> 4 times
+attempt -> 2 times
+way -> 2 times
+clothes -> 1 times
+yet -> 8 times
+demesne -> 2 times
+tedious. -> 1 times
+Replying -> 1 times
+an -> 13 times
+marianne -> 1 times
+entrance -> 3 times
+advanced. -> 1 times
+Two -> 1 times
+play -> 1 times
+when -> 1 times
+Required -> 1 times
+bringing -> 1 times
+me -> 5 times
+material -> 1 times
+stanhill -> 2 times
+jointure -> 1 times
+Mutual -> 1 times
+indeed -> 1 times
+living -> 2 times
+matter -> 1 times
+bed -> 2 times
+whence. -> 1 times
+principles -> 1 times
+discovered -> 2 times
+off -> 5 times
+increasing -> 2 times
+how -> 4 times
+reasonably -> 1 times
+middletons -> 1 times
+Add -> 1 times
+seems -> 1 times
+out -> 3 times
+man -> 6 times
+plate -> 1 times
+court -> 2 times
+sense. -> 1 times
+His -> 1 times
+worth -> 1 times
+truth -> 2 times
+given. -> 1 times
+All -> 1 times
+year -> 1 times
+feet -> 1 times
+view -> 2 times
+went -> 2 times
+sake. -> 1 times
+You -> 2 times
+agreeable -> 2 times
+breakfast -> 3 times
+set -> 2 times
+perceived -> 1 times
+immediate. -> 1 times
+Stimulated -> 1 times
+projectinWorse -> 1 times
+downs -> 1 times
+nor -> 4 times
+might -> 1 times
+did -> 2 times
+nay -> 9 times
+forth -> 2 times
+these. -> 1 times
+Must -> 1 times
+you -> 6 times
+with -> 1 times
+from -> 1 times
+were -> 1 times
+more. -> 1 times
+should -> 1 times
+remark -> 2 times
+vanity -> 2 times
+square. -> 1 times
+Unpleasant -> 1 times
+especially -> 2 times
+assistance -> 2 times
+sufficient -> 2 times
+he -> 16 times
+comparison -> 2 times
+inquietude. -> 1 times
+Branch -> 1 times
+one -> 3 times
+shy -> 3 times
+edward -> 1 times
+stairs -> 1 times
+turned -> 1 times
+law -> 2 times
+wonder -> 2 times
+horses. -> 2 times
+Devonshire -> 1 times
+invitation -> 1 times
+the -> 4 times
+excellence -> 4 times
+preference. -> 1 times
+Objection -> 1 times
+estimable -> 3 times
+discourse -> 5 times
+procuring -> 2 times
+remaining -> 1 times
+on -> 9 times
+distrusts. -> 1 times
+Simplicity -> 1 times
+affronting -> 1 times
+inquietude -> 1 times
+now -> 3 times
+sympathize -> 2 times
+age. -> 1 times
+She -> 2 times
+meant -> 1 times
+new -> 2 times
+their -> 1 times
+sex -> 3 times
+could -> 3 times
+defer -> 1 times
+child. -> 1 times
+An -> 3 times
+lose -> 1 times
+at -> 12 times
+quit -> 1 times
+life -> 1 times
+dull. -> 1 times
+Residence -> 1 times
+certainly -> 1 times
+elsewhere -> 2 times
+something -> 5 times
+preferred -> 3 times
+cordially -> 1 times
+law. -> 2 times
+Age -> 1 times
+surprise -> 2 times
+formerly -> 2 times
+mrs -> 4 times
+perceive -> 1 times
+few -> 4 times
+moderate. -> 1 times
+Of -> 1 times
+power -> 1 times
+match -> 2 times
+worse -> 3 times
+voice -> 1 times
+would. -> 1 times
+Large -> 1 times
+sense -> 3 times
+shall -> 1 times
+learn. -> 1 times
+By -> 1 times
+expect -> 1 times
+formal -> 1 times
+of. -> 3 times
+Ask -> 1 times
+eat -> 2 times
+questions -> 1 times
+abilities -> 2 times
+described -> 1 times
+assurance. -> 1 times
+Appetite -> 1 times
+unlocked -> 1 times
+advanced -> 2 times
+breeding -> 1 times
+concerns -> 2 times
+Cheerful -> 1 times
+get -> 2 times
+shutters -> 1 times
+repeated -> 3 times
+screened. -> 2 times
+cause -> 2 times
+hopes -> 1 times
+three. -> 1 times
+Prevent -> 1 times
+behaved -> 2 times
+fertile -> 2 times
+mistake -> 1 times
+on. -> 1 times
+Surprise -> 1 times
+steepest -> 1 times
+recurred -> 1 times
+landlord -> 1 times
+wandered -> 2 times
+amounted -> 1 times
+Continuing -> 2 times
+devonshire -> 1 times
+considered -> 1 times
+Rose -> 1 times
+past -> 1 times
+shew -> 1 times
+roof -> 1 times
+song -> 1 times
+neat. -> 1 times
+depend -> 1 times
+better -> 2 times
+praise -> 2 times
+friend -> 2 times
+garden -> 3 times
+to. -> 3 times
+Intention -> 1 times
+age -> 3 times
+otherwise -> 1 times
+breakfast. -> 1 times
+Around -> 1 times
+beyond -> 1 times
+extent -> 2 times
+Husbands -> 1 times
+resolved -> 2 times
+laughter -> 2 times
+debating. -> 1 times
+cordial -> 3 times
+visitor -> 1 times
+noisier -> 1 times
+fat -> 2 times
+subject -> 1 times
+general -> 1 times
+picture. -> 1 times
+Or -> 2 times
+offering -> 3 times
+confined -> 1 times
+no. -> 2 times
+Nay -> 1 times
+rapturous -> 1 times
+see -> 5 times
+residence. -> 1 times
+Highly -> 1 times
+talked -> 2 times
+vulgar. -> 1 times
+Her -> 2 times
+use -> 3 times
+natural -> 1 times
+feeling. -> 1 times
+Exquisite -> 1 times
+incommode -> 1 times
+immediate -> 1 times
+ourselves -> 2 times
+Law -> 1 times
+conduct -> 1 times
+chiefly -> 1 times
+beloved -> 1 times
+examine -> 1 times
+village -> 1 times
+proceed. -> 1 times
+Performed -> 1 times
+suspicion -> 1 times
+certainty -> 2 times
+frankness -> 3 times
+by -> 3 times
+attention -> 1 times
+pretended. -> 1 times
+Newspaper -> 1 times
+tolerably -> 2 times
+education -> 2 times
+enjoyment. -> 1 times
+Extremity -> 2 times
+excellent -> 2 times
+sincerity -> 2 times
+resembled. -> 1 times
+Joy -> 1 times
+house -> 1 times
+arise -> 1 times
+total -> 1 times
+boy -> 4 times
+but. -> 1 times
+Elderly -> 2 times
+chicken -> 1 times
+feeling -> 1 times
+is. -> 1 times
+Like -> 1 times
+seen -> 1 times
+drew -> 1 times
+make -> 1 times
+fond -> 2 times
+rent. -> 1 times
+Behaviour -> 1 times
+extremely -> 2 times
+explained -> 2 times
+situation -> 1 times
+september -> 1 times
+gentleman -> 1 times
+who. -> 2 times
+Is -> 2 times
+thought -> 2 times
+pointed -> 1 times
+hearing -> 1 times
+norland -> 1 times
+produce -> 1 times
+wishing. -> 1 times
+To -> 2 times
+figure -> 1 times
+spring -> 1 times
+season -> 1 times
+up. -> 1 times
+provision -> 1 times
+acuteness -> 1 times
+had -> 4 times
+intention. -> 1 times
+As -> 5 times
+called -> 1 times
+needed -> 1 times
+at. -> 2 times
+Assistance -> 1 times
+imprudence -> 1 times
+sentiments -> 1 times
+unpleasant -> 1 times
+expression -> 1 times
+surrounded -> 1 times
+not. -> 1 times
+Be -> 1 times
+ye -> 5 times
+secure -> 2 times
+nearer. -> 1 times
+Living -> 1 times
+valley -> 1 times
+merits -> 1 times
+esteem -> 3 times
+bed. -> 1 times
+last -> 2 times
+wise -> 1 times
+left. -> 1 times
+Visited -> 1 times
+civilly -> 1 times
+colonel -> 1 times
+So -> 2 times
+interested -> 1 times
+sentiments. -> 1 times
+Vanity -> 1 times
+giving -> 1 times
+points -> 1 times
+within -> 2 times
+six -> 2 times
+not -> 2 times
+Few -> 1 times
+impression -> 1 times
+difficulty -> 2 times
+decisively. -> 1 times
+allowance -> 2 times
+instantly -> 1 times
+strangers -> 3 times
+applauded -> 4 times
+so. -> 3 times
+Separate -> 1 times
+welcomed -> 1 times
+sensible -> 1 times
+laughing -> 1 times
+moderate -> 2 times
+shy. -> 1 times
+We -> 1 times
+seeing -> 1 times
+piqued -> 2 times
+merry -> 1 times
+least -> 2 times
+stood. -> 1 times
+And -> 2 times
+cold -> 1 times
+sons -> 1 times
+with. -> 1 times
+Delivered -> 1 times
+middleton -> 2 times
+therefore -> 1 times
+Attachment -> 1 times
+companions -> 2 times
+pianoforte. -> 1 times
+Able -> 1 times
+hope -> 1 times
+body. -> 1 times
+Any -> 1 times
+shyness -> 2 times
+article -> 1 times
+matters -> 1 times
+own -> 2 times
+nothing -> 1 times
+forming. -> 1 times
+additions -> 2 times
+satisfied -> 1 times
+perpetual. -> 1 times
+If -> 2 times
+manor -> 1 times
+happy. -> 1 times
+Without -> 1 times
+farther -> 1 times
+exposed -> 1 times
+led. -> 2 times
+Along -> 1 times
+happy -> 1 times
+cease -> 1 times
+green -> 1 times
+oh. -> 2 times
+Far -> 2 times
+quitting -> 1 times
+graceful -> 2 times
+received -> 3 times
+building. -> 1 times
+fact -> 1 times
+that -> 2 times
+show -> 2 times
+shed -> 1 times
+sold -> 1 times
+cold. -> 1 times
+Unaffected -> 2 times
+remarkably -> 1 times
+introduced -> 1 times
+terminated -> 1 times
+Result -> 1 times
+either -> 1 times
+design -> 1 times
+and. -> 1 times
+ashamed -> 1 times
+inhabit -> 1 times
+ferrars -> 1 times
+besides -> 2 times
+resolve. -> 1 times
+Own -> 1 times
+directly -> 1 times
+trifling. -> 1 times
+pursuit -> 1 times
+regular -> 1 times
+parlors. -> 1 times
+Rank -> 1 times
+what -> 1 times
+into -> 1 times
+sorry -> 1 times
+world -> 1 times
+spoil -> 1 times
+along. -> 1 times
+Incommode -> 1 times
+depending -> 3 times
+remainder -> 1 times
+Edward -> 1 times
+almost -> 1 times
+active -> 1 times
+thirty -> 3 times
+piqued. -> 1 times
+People -> 1 times
+period -> 1 times
+twenty -> 1 times
+Set -> 2 times
+was -> 1 times
+abroad -> 1 times
+ham -> 1 times
+plenty -> 1 times
+Admiration -> 1 times
+sir -> 2 times
+decisively -> 2 times
+everything -> 2 times
+inhabiting -> 1 times
+acceptance. -> 1 times
+Sooner -> 1 times
+settle -> 1 times
+sudden -> 2 times
+him. -> 1 times
+concluded -> 2 times
+extremity. -> 1 times
+Want -> 1 times
+four -> 2 times
+we -> 3 times
+face -> 1 times
+gate. -> 1 times
+played -> 1 times
+ladies -> 2 times
+answer -> 1 times
+little -> 1 times
+nature. -> 1 times
+Blessing -> 2 times
+formerly. -> 1 times
+Took -> 1 times
+spot -> 1 times
+size -> 1 times
+you. -> 1 times
+Outlived -> 1 times
+material. -> 1 times
+Him -> 2 times
+outweigh -> 2 times
+Demesne -> 1 times
+far -> 1 times
+hearted -> 1 times
+suppose -> 1 times
+venture -> 1 times
+excited -> 1 times
+has. -> 2 times
+Dependent -> 2 times
+Yet -> 1 times
+﻿no -> 1 times
+jokes -> 1 times
+why. -> 1 times
+Bed -> 1 times
+supposing -> 1 times
+fulfilled -> 1 times
+questions. -> 1 times
+Whatever -> 1 times
+exertion -> 1 times
+extended. -> 2 times
+baobab -> 1 times
+believed -> 1 times
+diverted -> 1 times
+rejoiced. -> 1 times
+End -> 1 times
+friendship -> 2 times
+can -> 4 times
+prosperous -> 1 times
+met. -> 1 times
+game -> 1 times
+park -> 1 times
+do. -> 1 times
+Was -> 1 times
+unknown -> 1 times
+certain -> 1 times
+ten -> 3 times
+promise. -> 1 times
+No -> 1 times
+finished -> 1 times
+cheerful -> 1 times
+packages -> 1 times
+we. -> 3 times
+assurance -> 3 times
+collected. -> 1 times
+Packages -> 1 times
+denoting -> 1 times
+humoured. -> 1 times
+Pressed -> 1 times
+natural. -> 1 times
+Answer -> 1 times
+misery -> 1 times
+adieus -> 1 times
+wooded -> 1 times
+men -> 2 times
+before -> 1 times
+though. -> 1 times
+Pretended -> 1 times
+belonging -> 1 times
+contented -> 1 times
+suffering -> 2 times
+favourite -> 2 times
+continual. -> 1 times
+Mrs -> 1 times
+civil -> 1 times
+means -> 1 times
+tried -> 1 times
+drift. -> 1 times
+Natural -> 1 times
+whether -> 1 times
+towards -> 1 times
+certain. -> 1 times
+Furnished -> 1 times
+unfeeling -> 1 times
+sometimes -> 2 times
+promotion. -> 1 times
+Quitting -> 1 times
+informed -> 1 times
+now. -> 1 times
+Projection -> 1 times
+conviction -> 2 times
+uncommonly -> 1 times
+delightful -> 1 times
+continuing. -> 1 times
+appetite -> 1 times
+ecstatic -> 1 times
+opinions -> 2 times
+hastened -> 2 times
+handsome -> 1 times
+admitted. -> 1 times
+relation -> 1 times
+screened -> 2 times
+doubtful. -> 1 times
+Overcame -> 1 times
+insisted -> 1 times
+trifling -> 1 times
+husbands. -> 1 times
+Might -> 1 times
+order -> 1 times
+found. -> 1 times
+impossible -> 2 times
+diminution. -> 1 times
+Did -> 1 times
+carriage -> 1 times
+learning -> 1 times
+its -> 1 times
+replying. -> 1 times
+Sister -> 1 times
+enable -> 1 times
+spirit -> 1 times
+really. -> 1 times
+Parish -> 1 times
+oppose -> 1 times
+repair -> 1 times
+misery. -> 1 times
+Quick -> 2 times
+style -> 1 times
+after -> 1 times
+money -> 2 times
+mrs. -> 1 times
+Ignorant -> 1 times
+drawings -> 1 times
+laughter. -> 1 times
+Case -> 1 times
+away -> 1 times
+sigh -> 1 times
+here -> 1 times
+upon. -> 1 times
+Acuteness -> 1 times
+exquisite -> 2 times
+forfeited. -> 1 times
+Enquire -> 1 times
+without -> 1 times
+garrets -> 1 times
+himself. -> 1 times
+Interest -> 1 times
+our -> 2 times
+followed -> 1 times
+was. -> 1 times
+Cultivated -> 1 times
+solicitude -> 1 times
+unpleasant. -> 1 times
+Oh -> 3 times
+acceptance -> 1 times
+apartments -> 2 times
+astonished -> 3 times
+delightful. -> 1 times
+Waiting -> 1 times
+lasting -> 1 times
+towards. -> 1 times
+melancholy -> 2 times
+unpleasing -> 1 times
+attachment -> 1 times
+announcing -> 1 times
+astonished. -> 1 times
+What -> 1 times
+leaf -> 1 times
+upon -> 1 times
+door. -> 1 times
+Tended -> 1 times
+remain -> 1 times
+stairs. -> 1 times
+smiling -> 1 times
+amiable -> 1 times
+visited -> 1 times
+offices -> 2 times
+hearted. -> 1 times
+Breakfast -> 1 times
+happiness -> 1 times
+frankness. -> 1 times
+Met -> 1 times
+Entreaties -> 1 times
+estimating -> 1 times
+cultivated. -> 1 times
+additions. -> 1 times
+Pronounce -> 1 times
+suspected. -> 1 times
+elinor -> 1 times
+temper. -> 1 times
+Quiet -> 1 times
+leave -> 2 times
+gay -> 2 times
+large -> 1 times
+Abilities -> 1 times
+perfectly -> 1 times
+pretended -> 2 times
+exquisite. -> 1 times
+another -> 1 times
+chamber -> 1 times
+pleased -> 1 times
+imagine -> 2 times
+in. -> 2 times
+Went -> 1 times
+loud -> 1 times
+shot -> 1 times
+draw. -> 1 times
+Excellent -> 1 times
+smallness. -> 1 times
+Removal -> 1 times
+request -> 1 times
+delight -> 1 times
+themselves. -> 1 times
+Offended -> 1 times
+consider -> 1 times
+speaking. -> 1 times
+Questions -> 1 times
+too -> 1 times
+son. -> 2 times
+distant. -> 1 times
+Improve -> 1 times
+message -> 1 times
+himself -> 1 times
+cheered -> 1 times
+however -> 1 times
+judge -> 1 times
+first -> 1 times
+chief -> 1 times
+her. -> 2 times
+Indeed -> 1 times
+always -> 1 times
+seemed -> 1 times
+narrow -> 1 times
+be. -> 1 times
+Instantly -> 1 times
+neglected -> 1 times
+delivered. -> 1 times
+Perhaps -> 1 times
+brandon -> 1 times
+cottage. -> 1 times
+Fulfilled -> 1 times
+direction -> 1 times
+continual -> 1 times
+propriety -> 1 times
+continued. -> 1 times
+Saw -> 1 times
+deficient -> 1 times
+engrossed -> 1 times
+concealed -> 1 times
+Concluded -> 1 times
+perpetual -> 1 times
+supposing. -> 1 times
+Farther -> 1 times
+related -> 1 times
+comfort -> 1 times
+civilly. -> 1 times
+Dashwoods -> 1 times
+objection -> 1 times
+the. -> 2 times
+produced -> 1 times
+prospect -> 1 times
+am. -> 1 times
+Placing -> 1 times
+forming -> 1 times
+looking -> 1 times
+married -> 1 times
+Margaret -> 1 times
+disposed -> 1 times
+rendered -> 1 times
+striking -> 1 times
+confined. -> 1 times
+It -> 1 times
+furnished -> 1 times
+unwilling -> 1 times
+peculiar -> 1 times
+ham. -> 1 times
+Sussex -> 1 times
+really -> 1 times
+elinor. -> 1 times
+properly -> 1 times
+Advice -> 1 times
+branch -> 1 times
+living. -> 1 times
+disposing -> 2 times
+admitting -> 1 times
+sportsmen -> 1 times
+sportsman. -> 1 times
+Their -> 1 times
+widen -> 1 times
+any. -> 1 times
+smart -> 1 times
+those -> 2 times
+Am -> 1 times
+wrote -> 1 times
+whole -> 1 times
+tears -> 1 times
+Absolute -> 1 times
+required -> 1 times
+reserved -> 2 times
+How -> 1 times
+found -> 1 times
+again -> 1 times
+taken -> 1 times
+Had -> 1 times
+desirous -> 1 times
+overcame. -> 1 times
+Improved -> 1 times
+property -> 1 times
+disposal -> 1 times
+me. -> 1 times
+over -> 1 times
+man. -> 1 times
+simple -> 1 times
+assure. -> 1 times
+Mr -> 1 times
+continued -> 1 times
+arranging -> 1 times
+agreement. -> 1 times
+Off -> 1 times
+mistress -> 1 times
+provided -> 1 times
+horrible -> 1 times
+opinions. -> 1 times
+Prevailed -> 1 times
+uncommon -> 1 times
+Now, freq = 2: (347) 101011011
+indulgence, freq = 2: (414) 110011110
+dissimilar, freq = 3: (316) 100111100
+for, freq = 3: (317) 100111101
+his, freq = 10: (82) 1010010
+thoroughly, freq = 1: (693) 1010110101
+has, freq = 7: (112) 01110000
+terminated., freq = 1: (1384) 10101101000
+Agreement, freq = 1: (1385) 10101101001
+offending, freq = 2: (415) 110011111
+commanded, freq = 1: (850) 1101010010
+my, freq = 6: (152) 10011000
+an., freq = 1: (851) 1101010011
+Change, freq = 1: (848) 1101010000
+wholly, freq = 1: (849) 1101010001
+say, freq = 5: (159) 10011111
+why, freq = 3: (254) 011111110
+eldest, freq = 2: (412) 110011100
+period., freq = 1: (854) 1101010110
+Are, freq = 1: (855) 1101010111
+projection, freq = 1: (852) 1101010100
+put, freq = 3: (255) 011111111
+celebrated, freq = 1: (853) 1101010101
+particular, freq = 1: (170) 00010101010
+unreserved, freq = 3: (252) 011111100
+joy, freq = 4: (214) 011010110
+unsatiable, freq = 1: (171) 00010101011
+its., freq = 2: (413) 110011101
+In, freq = 5: (178) 10110010
+then, freq = 1: (168) 00010101000
+dare, freq = 3: (253) 011111101
+good, freq = 1: (169) 00010101001
+am, freq = 7: (113) 01110001
+rose, freq = 1: (174) 00010101110
+bred, freq = 1: (175) 00010101111
+or., freq = 1: (172) 00010101100
+On, freq = 4: (215) 011010111
+in, freq = 15: (55) 0110111
+nearer, freq = 1: (173) 00010101101
+square, freq = 1: (162) 00010100010
+wanted., freq = 1: (163) 00010100011
+Do, freq = 2: (402) 110010010
+eduardo4ever, freq = 1: (160) 00010100000
+so, freq = 17: (47) 101111
+written, freq = 1: (161) 00010100001
+as, freq = 10: (83) 1010011
+raising, freq = 1: (166) 00010100110
+parlors, freq = 1: (167) 00010100111
+spirits, freq = 2: (403) 110010011
+mr, freq = 8: (99) 1100011
+elderly., freq = 1: (164) 00010100100
+Made, freq = 1: (165) 00010100101
+late, freq = 1: (186) 00010111010
+of, freq = 9: (92) 1011100
+high, freq = 1: (187) 00010111011
+left, freq = 1: (184) 00010111000
+hold., freq = 2: (400) 110010000
+Carried, freq = 1: (185) 00010111001
+females, freq = 2: (401) 110010001
+up, freq = 8: (108) 01101100
+highest, freq = 1: (190) 00010111110
+calling., freq = 2: (406) 110010110
+Limits, freq = 1: (191) 00010111111
+marked, freq = 1: (188) 00010111100
+led, freq = 4: (212) 011010100
+silent, freq = 4: (213) 011010101
+dining, freq = 1: (189) 00010111101
+her, freq = 11: (77) 1001101
+she, freq = 8: (109) 01101101
+far., freq = 1: (178) 00010110010
+Sir, freq = 2: (407) 110010111
+but, freq = 6: (153) 10011001
+elegance, freq = 1: (179) 00010110011
+marriage, freq = 2: (404) 110010100
+dwelling, freq = 2: (405) 110010101
+likewise, freq = 3: (242) 011110010
+position, freq = 2: (394) 0110001010
+old, freq = 4: (218) 11011010
+pleasure, freq = 2: (395) 0110001011
+men., freq = 3: (243) 011110011
+Dissimilar, freq = 1: (176) 00010110000
+themselves, freq = 1: (177) 00010110001
+simplicity, freq = 2: (392) 0110001000
+no, freq = 11: (78) 1001110
+contrasted, freq = 1: (182) 00010110110
+as., freq = 3: (240) 011110000
+Delay, freq = 1: (183) 00010110111
+great, freq = 1: (180) 00010110100
+day, freq = 5: (179) 10110011
+hours, freq = 3: (241) 011110001
+Stuff, freq = 1: (181) 00010110101
+front, freq = 1: (138) 00010001010
+to, freq = 13: (57) 0111001
+do, freq = 17: (48) 110000
+allow, freq = 1: (139) 00010001011
+asked, freq = 3: (246) 011110110
+he., freq = 4: (219) 11011011
+For, freq = 3: (247) 011110111
+though, freq = 3: (244) 011110100
+result, freq = 4: (216) 11011000
+and, freq = 6: (146) 10010010
+talent, freq = 1: (136) 00010001000
+add, freq = 6: (147) 10010011
+are, freq = 3: (245) 011110101
+parish, freq = 1: (137) 00010001001
+valley., freq = 1: (142) 00010001110
+Songs, freq = 1: (143) 00010001111
+oh, freq = 6: (144) 10010000
+other, freq = 2: (393) 0110001001
+avoid, freq = 1: (140) 00010001100
+it, freq = 12: (59) 0111011
+woman, freq = 1: (141) 00010001101
+style., freq = 2: (398) 0110001110
+myself, freq = 1: (130) 00010000010
+family, freq = 1: (131) 00010000011
+if, freq = 5: (176) 10110000
+be, freq = 5: (177) 10110001
+agreed., freq = 1: (128) 00010000000
+Gay, freq = 2: (399) 0110001111
+collected, freq = 1: (129) 00010000001
+son, freq = 2: (396) 0110001100
+him, freq = 10: (80) 1010000
+knowledge, freq = 1: (134) 00010000110
+delivered, freq = 2: (397) 0110001101
+put., freq = 1: (135) 00010000111
+Added, freq = 1: (132) 00010000100
+would, freq = 1: (133) 00010000101
+end, freq = 5: (182) 10110110
+ask, freq = 5: (183) 10110111
+sight, freq = 1: (154) 00010011010
+saw, freq = 5: (180) 10110100
+dried, freq = 1: (155) 00010011011
+house., freq = 1: (152) 00010011000
+Property, freq = 1: (153) 00010011001
+expenses, freq = 1: (158) 00010011110
+yourself, freq = 3: (266) 100001010
+occasion, freq = 1: (159) 00010011111
+endeavor, freq = 1: (156) 00010011100
+two, freq = 2: (386) 0110000010
+may, freq = 3: (267) 100001011
+judgment, freq = 2: (387) 0110000011
+she., freq = 2: (384) 0110000000
+Me, freq = 2: (385) 0110000001
+soon, freq = 2: (390) 0110000110
+rank, freq = 2: (391) 0110000111
+most, freq = 1: (157) 00010011101
+head, freq = 1: (146) 00010010010
+time, freq = 1: (147) 00010010011
+tore., freq = 1: (144) 00010010000
+Colonel, freq = 1: (145) 00010010001
+or, freq = 10: (81) 1010001
+passage, freq = 2: (388) 0110000100
+ability., freq = 1: (150) 00010010110
+Picture, freq = 1: (151) 00010010111
+removal, freq = 2: (389) 0110000101
+detract, freq = 1: (148) 00010010100
+earnest, freq = 1: (149) 00010010101
+is, freq = 5: (181) 10110101
+by., freq = 3: (264) 100001000
+Esteems, freq = 1: (234) 00011101010
+met, freq = 4: (217) 11011001
+attempt, freq = 2: (410) 0110011010
+way, freq = 2: (411) 0110011011
+clothes, freq = 1: (235) 00011101011
+yet, freq = 8: (102) 1100110
+demesne, freq = 2: (408) 0110011000
+tedious., freq = 1: (232) 00011101000
+Replying, freq = 1: (233) 00011101001
+an, freq = 13: (58) 0111010
+marianne, freq = 1: (238) 00011101110
+entrance, freq = 3: (265) 100001001
+advanced., freq = 1: (239) 00011101111
+Two, freq = 1: (236) 00011101100
+play, freq = 1: (237) 00011101101
+when, freq = 1: (226) 00011100010
+Required, freq = 1: (227) 00011100011
+bringing, freq = 1: (224) 00011100000
+me, freq = 5: (170) 10101010
+material, freq = 1: (225) 00011100001
+stanhill, freq = 2: (409) 0110011001
+jointure, freq = 1: (230) 00011100110
+Mutual, freq = 1: (231) 00011100111
+indeed, freq = 1: (228) 00011100100
+living, freq = 2: (414) 0110011110
+matter, freq = 1: (229) 00011100101
+bed, freq = 2: (415) 0110011111
+whence., freq = 1: (250) 00011111010
+principles, freq = 1: (251) 00011111011
+discovered, freq = 2: (412) 0110011100
+off, freq = 5: (171) 10101011
+increasing, freq = 2: (413) 0110011101
+how, freq = 4: (222) 11011110
+reasonably, freq = 1: (248) 00011111000
+middletons, freq = 1: (249) 00011111001
+Add, freq = 1: (254) 00011111110
+seems, freq = 1: (255) 00011111111
+out, freq = 3: (270) 100001110
+man, freq = 6: (145) 10010001
+plate, freq = 1: (252) 00011111100
+court, freq = 2: (402) 0110010010
+sense., freq = 1: (253) 00011111101
+His, freq = 1: (242) 00011110010
+worth, freq = 1: (243) 00011110011
+truth, freq = 2: (403) 0110010011
+given., freq = 1: (240) 00011110000
+All, freq = 1: (241) 00011110001
+year, freq = 1: (246) 00011110110
+feet, freq = 1: (247) 00011110111
+view, freq = 2: (400) 0110010000
+went, freq = 2: (401) 0110010001
+sake., freq = 1: (244) 00011110100
+You, freq = 2: (406) 0110010110
+agreeable, freq = 2: (407) 0110010111
+breakfast, freq = 3: (271) 100001111
+set, freq = 2: (404) 0110010100
+perceived, freq = 1: (245) 00011110101
+immediate., freq = 1: (202) 00011001010
+Stimulated, freq = 1: (203) 00011001011
+projectinWorse, freq = 1: (200) 00011001000
+downs, freq = 1: (201) 00011001001
+nor, freq = 4: (223) 11011111
+might, freq = 1: (206) 00011001110
+did, freq = 2: (405) 0110010101
+nay, freq = 9: (93) 1011101
+forth, freq = 2: (490) 111101010
+these., freq = 1: (207) 00011001111
+Must, freq = 1: (204) 00011001100
+you, freq = 6: (150) 10010110
+with, freq = 1: (205) 00011001101
+from, freq = 1: (194) 00011000010
+were, freq = 1: (195) 00011000011
+more., freq = 1: (192) 00011000000
+should, freq = 1: (193) 00011000001
+remark, freq = 2: (491) 111101011
+vanity, freq = 2: (488) 111101000
+square., freq = 1: (198) 00011000110
+Unpleasant, freq = 1: (199) 00011000111
+especially, freq = 2: (489) 111101001
+assistance, freq = 2: (494) 111101110
+sufficient, freq = 2: (495) 111101111
+he, freq = 16: (52) 0110100
+comparison, freq = 2: (492) 111101100
+inquietude., freq = 1: (196) 00011000100
+Branch, freq = 1: (197) 00011000101
+one, freq = 3: (268) 100001100
+shy, freq = 3: (269) 100001101
+edward, freq = 1: (218) 00011011010
+stairs, freq = 1: (219) 00011011011
+turned, freq = 1: (216) 00011011000
+law, freq = 2: (493) 111101101
+wonder, freq = 2: (482) 111100010
+horses., freq = 2: (483) 111100011
+Devonshire, freq = 1: (217) 00011011001
+invitation, freq = 1: (222) 00011011110
+the, freq = 4: (220) 11011100
+excellence, freq = 4: (221) 11011101
+preference., freq = 1: (223) 00011011111
+Objection, freq = 1: (220) 00011011100
+estimable, freq = 3: (258) 100000010
+discourse, freq = 5: (168) 10101000
+procuring, freq = 2: (480) 111100000
+remaining, freq = 1: (221) 00011011101
+on, freq = 9: (98) 1100010
+distrusts., freq = 1: (210) 00011010010
+Simplicity, freq = 1: (211) 00011010011
+affronting, freq = 1: (208) 00011010000
+inquietude, freq = 1: (209) 00011010001
+now, freq = 3: (259) 100000011
+sympathize, freq = 2: (481) 111100001
+age., freq = 1: (214) 00011010110
+She, freq = 2: (486) 111100110
+meant, freq = 1: (215) 00011010111
+new, freq = 2: (487) 111100111
+their, freq = 1: (212) 00011010100
+sex, freq = 3: (256) 100000000
+could, freq = 3: (257) 100000001
+defer, freq = 1: (213) 00011010101
+child., freq = 1: (42) 00000101010
+An, freq = 3: (262) 100000110
+lose, freq = 1: (43) 00000101011
+at, freq = 12: (62) 0111110
+quit, freq = 1: (40) 00000101000
+life, freq = 1: (41) 00000101001
+dull., freq = 1: (46) 00000101110
+Residence, freq = 1: (47) 00000101111
+certainly, freq = 1: (44) 00000101100
+elsewhere, freq = 2: (484) 111100100
+something, freq = 5: (169) 10101001
+preferred, freq = 3: (263) 100000111
+cordially, freq = 1: (45) 00000101101
+law., freq = 2: (485) 111100101
+Age, freq = 1: (34) 00000100010
+surprise, freq = 2: (506) 111111010
+formerly, freq = 2: (507) 111111011
+mrs, freq = 4: (210) 11010010
+perceive, freq = 1: (35) 00000100011
+few, freq = 4: (211) 11010011
+moderate., freq = 1: (32) 00000100000
+Of, freq = 1: (33) 00000100001
+power, freq = 1: (38) 00000100110
+match, freq = 2: (504) 111111000
+worse, freq = 3: (260) 100000100
+voice, freq = 1: (39) 00000100111
+would., freq = 1: (36) 00000100100
+Large, freq = 1: (37) 00000100101
+sense, freq = 3: (261) 100000101
+shall, freq = 1: (58) 00000111010
+learn., freq = 1: (59) 00000111011
+By, freq = 1: (56) 00000111000
+expect, freq = 1: (57) 00000111001
+formal, freq = 1: (62) 00000111110
+of., freq = 3: (282) 100011010
+Ask, freq = 1: (63) 00000111111
+eat, freq = 2: (505) 111111001
+questions, freq = 1: (60) 00000111100
+abilities, freq = 2: (510) 111111110
+described, freq = 1: (61) 00000111101
+assurance., freq = 1: (50) 00000110010
+Appetite, freq = 1: (51) 00000110011
+unlocked, freq = 1: (48) 00000110000
+advanced, freq = 2: (511) 111111111
+breeding, freq = 1: (49) 00000110001
+concerns, freq = 2: (508) 111111100
+Cheerful, freq = 1: (54) 00000110110
+get, freq = 2: (509) 111111101
+shutters, freq = 1: (55) 00000110111
+repeated, freq = 3: (283) 100011011
+screened., freq = 2: (498) 111110010
+cause, freq = 2: (499) 111110011
+hopes, freq = 1: (52) 00000110100
+three., freq = 1: (53) 00000110101
+Prevent, freq = 1: (10) 00000001010
+behaved, freq = 2: (496) 111110000
+fertile, freq = 2: (497) 111110001
+mistake, freq = 1: (11) 00000001011
+on., freq = 1: (8) 00000001000
+Surprise, freq = 1: (9) 00000001001
+steepest, freq = 1: (14) 00000001110
+recurred, freq = 1: (15) 00000001111
+landlord, freq = 1: (12) 00000001100
+wandered, freq = 2: (502) 111110110
+amounted, freq = 1: (13) 00000001101
+Continuing, freq = 2: (503) 111110111
+devonshire, freq = 1: (2) 00000000010
+considered, freq = 1: (3) 00000000011
+Rose, freq = 1: (0) 00000000000
+past, freq = 1: (1) 00000000001
+shew, freq = 1: (6) 00000000110
+roof, freq = 1: (7) 00000000111
+song, freq = 1: (4) 00000000100
+neat., freq = 1: (5) 00000000101
+depend, freq = 1: (26) 00000011010
+better, freq = 2: (500) 111110100
+praise, freq = 2: (501) 111110101
+friend, freq = 2: (458) 111001010
+garden, freq = 3: (280) 100011000
+to., freq = 3: (281) 100011001
+Intention, freq = 1: (27) 00000011011
+age, freq = 3: (286) 100011110
+otherwise, freq = 1: (24) 00000011000
+breakfast., freq = 1: (25) 00000011001
+Around, freq = 1: (30) 00000011110
+beyond, freq = 1: (31) 00000011111
+extent, freq = 2: (459) 111001011
+Husbands, freq = 1: (28) 00000011100
+resolved, freq = 2: (456) 111001000
+laughter, freq = 2: (457) 111001001
+debating., freq = 1: (29) 00000011101
+cordial, freq = 3: (287) 100011111
+visitor, freq = 1: (18) 00000010010
+noisier, freq = 1: (19) 00000010011
+fat, freq = 2: (462) 111001110
+subject, freq = 1: (16) 00000010000
+general, freq = 1: (17) 00000010001
+picture., freq = 1: (22) 00000010110
+Or, freq = 2: (463) 111001111
+offering, freq = 3: (284) 100011100
+confined, freq = 1: (23) 00000010111
+no., freq = 2: (460) 111001100
+Nay, freq = 1: (20) 00000010100
+rapturous, freq = 1: (21) 00000010101
+see, freq = 5: (174) 10101110
+residence., freq = 1: (106) 00001101010
+Highly, freq = 1: (107) 00001101011
+talked, freq = 2: (461) 111001101
+vulgar., freq = 1: (104) 00001101000
+Her, freq = 2: (450) 111000010
+use, freq = 3: (285) 100011101
+natural, freq = 1: (105) 00001101001
+feeling., freq = 1: (110) 00001101110
+Exquisite, freq = 1: (111) 00001101111
+incommode, freq = 1: (108) 00001101100
+immediate, freq = 1: (109) 00001101101
+ourselves, freq = 2: (451) 111000011
+Law, freq = 1: (98) 00001100010
+conduct, freq = 1: (99) 00001100011
+chiefly, freq = 1: (96) 00001100000
+beloved, freq = 1: (97) 00001100001
+examine, freq = 1: (102) 00001100110
+village, freq = 1: (103) 00001100111
+proceed., freq = 1: (100) 00001100100
+Performed, freq = 1: (101) 00001100101
+suspicion, freq = 1: (122) 00001111010
+certainty, freq = 2: (448) 111000000
+frankness, freq = 3: (274) 100010010
+by, freq = 3: (275) 100010011
+attention, freq = 1: (123) 00001111011
+pretended., freq = 1: (120) 00001111000
+Newspaper, freq = 1: (121) 00001111001
+tolerably, freq = 2: (449) 111000001
+education, freq = 2: (454) 111000110
+enjoyment., freq = 1: (126) 00001111110
+Extremity, freq = 2: (455) 111000111
+excellent, freq = 2: (452) 111000100
+sincerity, freq = 2: (453) 111000101
+resembled., freq = 1: (127) 00001111111
+Joy, freq = 1: (124) 00001111100
+house, freq = 1: (125) 00001111101
+arise, freq = 1: (114) 00001110010
+total, freq = 1: (115) 00001110011
+boy, freq = 4: (208) 11010000
+but., freq = 1: (112) 00001110000
+Elderly, freq = 2: (474) 111011010
+chicken, freq = 1: (113) 00001110001
+feeling, freq = 1: (118) 00001110110
+is., freq = 1: (119) 00001110111
+Like, freq = 1: (116) 00001110100
+seen, freq = 1: (117) 00001110101
+drew, freq = 1: (74) 00001001010
+make, freq = 1: (75) 00001001011
+fond, freq = 2: (475) 111011011
+rent., freq = 1: (72) 00001001000
+Behaviour, freq = 1: (73) 00001001001
+extremely, freq = 2: (472) 111011000
+explained, freq = 2: (473) 111011001
+situation, freq = 1: (78) 00001001110
+september, freq = 1: (79) 00001001111
+gentleman, freq = 1: (76) 00001001100
+who., freq = 2: (478) 111011110
+Is, freq = 2: (479) 111011111
+thought, freq = 2: (476) 111011100
+pointed, freq = 1: (77) 00001001101
+hearing, freq = 1: (66) 00001000010
+norland, freq = 1: (67) 00001000011
+produce, freq = 1: (64) 00001000000
+wishing., freq = 1: (65) 00001000001
+To, freq = 2: (477) 111011101
+figure, freq = 1: (70) 00001000110
+spring, freq = 1: (71) 00001000111
+season, freq = 1: (68) 00001000100
+up., freq = 1: (69) 00001000101
+provision, freq = 1: (90) 00001011010
+acuteness, freq = 1: (91) 00001011011
+had, freq = 4: (209) 11010001
+intention., freq = 1: (88) 00001011000
+As, freq = 5: (175) 10101111
+called, freq = 1: (89) 00001011001
+needed, freq = 1: (94) 00001011110
+at., freq = 2: (466) 111010010
+Assistance, freq = 1: (95) 00001011111
+imprudence, freq = 1: (92) 00001011100
+sentiments, freq = 1: (93) 00001011101
+unpleasant, freq = 1: (82) 00001010010
+expression, freq = 1: (83) 00001010011
+surrounded, freq = 1: (80) 00001010000
+not., freq = 1: (81) 00001010001
+Be, freq = 1: (86) 00001010110
+ye, freq = 5: (172) 10101100
+secure, freq = 2: (467) 111010011
+nearer., freq = 1: (87) 00001010111
+Living, freq = 1: (84) 00001010100
+valley, freq = 1: (85) 00001010101
+merits, freq = 1: (426) 00110101010
+esteem, freq = 3: (272) 100010000
+bed., freq = 1: (427) 00110101011
+last, freq = 2: (464) 111010000
+wise, freq = 1: (424) 00110101000
+left., freq = 1: (425) 00110101001
+Visited, freq = 1: (430) 00110101110
+civilly, freq = 1: (431) 00110101111
+colonel, freq = 1: (428) 00110101100
+So, freq = 2: (465) 111010001
+interested, freq = 1: (429) 00110101101
+sentiments., freq = 1: (418) 00110100010
+Vanity, freq = 1: (419) 00110100011
+giving, freq = 1: (416) 00110100000
+points, freq = 1: (417) 00110100001
+within, freq = 2: (470) 111010110
+six, freq = 2: (471) 111010111
+not, freq = 2: (468) 111010100
+Few, freq = 1: (422) 00110100110
+impression, freq = 1: (423) 00110100111
+difficulty, freq = 2: (469) 111010101
+decisively., freq = 1: (420) 00110100100
+allowance, freq = 2: (298) 0100101010
+instantly, freq = 1: (421) 00110100101
+strangers, freq = 3: (273) 100010001
+applauded, freq = 4: (214) 11010110
+so., freq = 3: (278) 100010110
+Separate, freq = 1: (442) 00110111010
+welcomed, freq = 1: (443) 00110111011
+sensible, freq = 1: (440) 00110111000
+laughing, freq = 1: (441) 00110111001
+moderate, freq = 2: (299) 0100101011
+shy., freq = 1: (446) 00110111110
+We, freq = 1: (447) 00110111111
+seeing, freq = 1: (444) 00110111100
+piqued, freq = 2: (296) 0100101000
+merry, freq = 1: (445) 00110111101
+least, freq = 2: (297) 0100101001
+stood., freq = 1: (434) 00110110010
+And, freq = 2: (302) 0100101110
+cold, freq = 1: (435) 00110110011
+sons, freq = 1: (432) 00110110000
+with., freq = 1: (433) 00110110001
+Delivered, freq = 1: (438) 00110110110
+middleton, freq = 2: (303) 0100101111
+therefore, freq = 1: (439) 00110110111
+Attachment, freq = 1: (436) 00110110100
+companions, freq = 2: (300) 0100101100
+pianoforte., freq = 1: (437) 00110110101
+Able, freq = 1: (394) 00110001010
+hope, freq = 1: (395) 00110001011
+body., freq = 1: (392) 00110001000
+Any, freq = 1: (393) 00110001001
+shyness, freq = 2: (301) 0100101101
+article, freq = 1: (398) 00110001110
+matters, freq = 1: (399) 00110001111
+own, freq = 2: (290) 0100100010
+nothing, freq = 1: (396) 00110001100
+forming., freq = 1: (397) 00110001101
+additions, freq = 2: (291) 0100100011
+satisfied, freq = 1: (386) 00110000010
+perpetual., freq = 1: (387) 00110000011
+If, freq = 2: (288) 0100100000
+manor, freq = 1: (384) 00110000000
+happy., freq = 1: (385) 00110000001
+Without, freq = 1: (390) 00110000110
+farther, freq = 1: (391) 00110000111
+exposed, freq = 1: (388) 00110000100
+led., freq = 2: (289) 0100100001
+Along, freq = 1: (389) 00110000101
+happy, freq = 1: (410) 00110011010
+cease, freq = 1: (411) 00110011011
+green, freq = 1: (408) 00110011000
+oh., freq = 2: (294) 0100100110
+Far, freq = 2: (295) 0100100111
+quitting, freq = 1: (409) 00110011001
+graceful, freq = 2: (292) 0100100100
+received, freq = 3: (279) 100010111
+building., freq = 1: (414) 00110011110
+fact, freq = 1: (415) 00110011111
+that, freq = 2: (293) 0100100101
+show, freq = 2: (314) 0100111010
+shed, freq = 1: (412) 00110011100
+sold, freq = 1: (413) 00110011101
+cold., freq = 1: (402) 00110010010
+Unaffected, freq = 2: (315) 0100111011
+remarkably, freq = 1: (403) 00110010011
+introduced, freq = 1: (400) 00110010000
+terminated, freq = 1: (401) 00110010001
+Result, freq = 1: (406) 00110010110
+either, freq = 1: (407) 00110010111
+design, freq = 1: (404) 00110010100
+and., freq = 1: (405) 00110010101
+ashamed, freq = 1: (490) 00111101010
+inhabit, freq = 1: (491) 00111101011
+ferrars, freq = 1: (488) 00111101000
+besides, freq = 2: (312) 0100111000
+resolve., freq = 1: (489) 00111101001
+Own, freq = 1: (494) 00111101110
+directly, freq = 1: (495) 00111101111
+trifling., freq = 1: (492) 00111101100
+pursuit, freq = 1: (493) 00111101101
+regular, freq = 1: (482) 00111100010
+parlors., freq = 1: (483) 00111100011
+Rank, freq = 1: (480) 00111100000
+what, freq = 1: (481) 00111100001
+into, freq = 1: (486) 00111100110
+sorry, freq = 1: (487) 00111100111
+world, freq = 1: (484) 00111100100
+spoil, freq = 1: (485) 00111100101
+along., freq = 1: (506) 00111111010
+Incommode, freq = 1: (507) 00111111011
+depending, freq = 3: (276) 100010100
+remainder, freq = 1: (504) 00111111000
+Edward, freq = 1: (505) 00111111001
+almost, freq = 1: (510) 00111111110
+active, freq = 1: (511) 00111111111
+thirty, freq = 3: (277) 100010101
+piqued., freq = 1: (508) 00111111100
+People, freq = 1: (509) 00111111101
+period, freq = 1: (498) 00111110010
+twenty, freq = 1: (499) 00111110011
+Set, freq = 2: (313) 0100111001
+was, freq = 1: (496) 00111110000
+abroad, freq = 1: (497) 00111110001
+ham, freq = 1: (502) 00111110110
+plenty, freq = 1: (503) 00111110111
+Admiration, freq = 1: (500) 00111110100
+sir, freq = 2: (318) 0100111110
+decisively, freq = 2: (319) 0100111111
+everything, freq = 2: (316) 0100111100
+inhabiting, freq = 1: (501) 00111110101
+acceptance., freq = 1: (458) 00111001010
+Sooner, freq = 1: (459) 00111001011
+settle, freq = 1: (456) 00111001000
+sudden, freq = 2: (317) 0100111101
+him., freq = 1: (457) 00111001001
+concluded, freq = 2: (306) 0100110010
+extremity., freq = 1: (462) 00111001110
+Want, freq = 1: (463) 00111001111
+four, freq = 2: (307) 0100110011
+we, freq = 3: (298) 100101010
+face, freq = 1: (460) 00111001100
+gate., freq = 1: (461) 00111001101
+played, freq = 1: (450) 00111000010
+ladies, freq = 2: (304) 0100110000
+answer, freq = 1: (451) 00111000011
+little, freq = 1: (448) 00111000000
+nature., freq = 1: (449) 00111000001
+Blessing, freq = 2: (305) 0100110001
+formerly., freq = 1: (454) 00111000110
+Took, freq = 1: (455) 00111000111
+spot, freq = 1: (452) 00111000100
+size, freq = 1: (453) 00111000101
+you., freq = 1: (474) 00111011010
+Outlived, freq = 1: (475) 00111011011
+material., freq = 1: (472) 00111011000
+Him, freq = 2: (310) 0100110110
+outweigh, freq = 2: (311) 0100110111
+Demesne, freq = 1: (473) 00111011001
+far, freq = 1: (478) 00111011110
+hearted, freq = 1: (479) 00111011111
+suppose, freq = 1: (476) 00111011100
+venture, freq = 1: (477) 00111011101
+excited, freq = 1: (466) 00111010010
+has., freq = 2: (308) 0100110100
+Dependent, freq = 2: (309) 0100110101
+Yet, freq = 1: (467) 00111010011
+﻿no, freq = 1: (464) 00111010000
+jokes, freq = 1: (465) 00111010001
+why., freq = 1: (470) 00111010110
+Bed, freq = 1: (471) 00111010111
+supposing, freq = 1: (468) 00111010100
+fulfilled, freq = 1: (469) 00111010101
+questions., freq = 1: (298) 00100101010
+Whatever, freq = 1: (299) 00100101011
+exertion, freq = 1: (296) 00100101000
+extended., freq = 2: (266) 0100001010
+baobab, freq = 1: (297) 00100101001
+believed, freq = 1: (302) 00100101110
+diverted, freq = 1: (303) 00100101111
+rejoiced., freq = 1: (300) 00100101100
+End, freq = 1: (301) 00100101101
+friendship, freq = 2: (267) 0100001011
+can, freq = 4: (215) 11010111
+prosperous, freq = 1: (290) 00100100010
+met., freq = 1: (291) 00100100011
+game, freq = 1: (288) 00100100000
+park, freq = 1: (289) 00100100001
+do., freq = 1: (294) 00100100110
+Was, freq = 1: (295) 00100100111
+unknown, freq = 1: (292) 00100100100
+certain, freq = 1: (293) 00100100101
+ten, freq = 3: (299) 100101011
+promise., freq = 1: (314) 00100111010
+No, freq = 1: (315) 00100111011
+finished, freq = 1: (312) 00100111000
+cheerful, freq = 1: (313) 00100111001
+packages, freq = 1: (318) 00100111110
+we., freq = 3: (296) 100101000
+assurance, freq = 3: (297) 100101001
+collected., freq = 1: (319) 00100111111
+Packages, freq = 1: (316) 00100111100
+denoting, freq = 1: (317) 00100111101
+humoured., freq = 1: (306) 00100110010
+Pressed, freq = 1: (307) 00100110011
+natural., freq = 1: (304) 00100110000
+Answer, freq = 1: (305) 00100110001
+misery, freq = 1: (310) 00100110110
+adieus, freq = 1: (311) 00100110111
+wooded, freq = 1: (308) 00100110100
+men, freq = 2: (264) 0100001000
+before, freq = 1: (309) 00100110101
+though., freq = 1: (266) 00100001010
+Pretended, freq = 1: (267) 00100001011
+belonging, freq = 1: (264) 00100001000
+contented, freq = 1: (265) 00100001001
+suffering, freq = 2: (265) 0100001001
+favourite, freq = 2: (270) 0100001110
+continual., freq = 1: (270) 00100001110
+Mrs, freq = 1: (271) 00100001111
+civil, freq = 1: (268) 00100001100
+means, freq = 1: (269) 00100001101
+tried, freq = 1: (258) 00100000010
+drift., freq = 1: (259) 00100000011
+Natural, freq = 1: (256) 00100000000
+whether, freq = 1: (257) 00100000001
+towards, freq = 1: (262) 00100000110
+certain., freq = 1: (263) 00100000111
+Furnished, freq = 1: (260) 00100000100
+unfeeling, freq = 1: (261) 00100000101
+sometimes, freq = 2: (271) 0100001111
+promotion., freq = 1: (282) 00100011010
+Quitting, freq = 1: (283) 00100011011
+informed, freq = 1: (280) 00100011000
+now., freq = 1: (281) 00100011001
+Projection, freq = 1: (286) 00100011110
+conviction, freq = 2: (268) 0100001100
+uncommonly, freq = 1: (287) 00100011111
+delightful, freq = 1: (284) 00100011100
+continuing., freq = 1: (285) 00100011101
+appetite, freq = 1: (274) 00100010010
+ecstatic, freq = 1: (275) 00100010011
+opinions, freq = 2: (269) 0100001101
+hastened, freq = 2: (258) 0100000010
+handsome, freq = 1: (272) 00100010000
+admitted., freq = 1: (273) 00100010001
+relation, freq = 1: (278) 00100010110
+screened, freq = 2: (259) 0100000011
+doubtful., freq = 1: (279) 00100010111
+Overcame, freq = 1: (276) 00100010100
+insisted, freq = 1: (277) 00100010101
+trifling, freq = 1: (362) 00101101010
+husbands., freq = 1: (363) 00101101011
+Might, freq = 1: (360) 00101101000
+order, freq = 1: (361) 00101101001
+found., freq = 1: (366) 00101101110
+impossible, freq = 2: (256) 0100000000
+diminution., freq = 1: (367) 00101101111
+Did, freq = 1: (364) 00101101100
+carriage, freq = 1: (365) 00101101101
+learning, freq = 1: (354) 00101100010
+its, freq = 1: (355) 00101100011
+replying., freq = 1: (352) 00101100000
+Sister, freq = 1: (353) 00101100001
+enable, freq = 1: (358) 00101100110
+spirit, freq = 1: (359) 00101100111
+really., freq = 1: (356) 00101100100
+Parish, freq = 1: (357) 00101100101
+oppose, freq = 1: (378) 00101111010
+repair, freq = 1: (379) 00101111011
+misery., freq = 1: (376) 00101111000
+Quick, freq = 2: (257) 0100000001
+style, freq = 1: (377) 00101111001
+after, freq = 1: (382) 00101111110
+money, freq = 2: (262) 0100000110
+mrs., freq = 1: (383) 00101111111
+Ignorant, freq = 1: (380) 00101111100
+drawings, freq = 1: (381) 00101111101
+laughter., freq = 1: (370) 00101110010
+Case, freq = 1: (371) 00101110011
+away, freq = 1: (368) 00101110000
+sigh, freq = 1: (369) 00101110001
+here, freq = 1: (374) 00101110110
+upon., freq = 1: (375) 00101110111
+Acuteness, freq = 1: (372) 00101110100
+exquisite, freq = 2: (263) 0100000111
+forfeited., freq = 1: (373) 00101110101
+Enquire, freq = 1: (330) 00101001010
+without, freq = 1: (331) 00101001011
+garrets, freq = 1: (328) 00101001000
+himself., freq = 1: (329) 00101001001
+Interest, freq = 1: (334) 00101001110
+our, freq = 2: (260) 0100000100
+followed, freq = 1: (335) 00101001111
+was., freq = 1: (332) 00101001100
+Cultivated, freq = 1: (333) 00101001101
+solicitude, freq = 1: (322) 00101000010
+unpleasant., freq = 1: (323) 00101000011
+Oh, freq = 3: (302) 100101110
+acceptance, freq = 1: (320) 00101000000
+apartments, freq = 2: (261) 0100000101
+astonished, freq = 3: (303) 100101111
+delightful., freq = 1: (321) 00101000001
+Waiting, freq = 1: (326) 00101000110
+lasting, freq = 1: (327) 00101000111
+towards., freq = 1: (324) 00101000100
+melancholy, freq = 2: (282) 0100011010
+unpleasing, freq = 1: (325) 00101000101
+attachment, freq = 1: (346) 00101011010
+announcing, freq = 1: (347) 00101011011
+astonished., freq = 1: (344) 00101011000
+What, freq = 1: (345) 00101011001
+leaf, freq = 1: (350) 00101011110
+upon, freq = 1: (351) 00101011111
+door., freq = 1: (348) 00101011100
+Tended, freq = 1: (349) 00101011101
+remain, freq = 1: (338) 00101010010
+stairs., freq = 1: (339) 00101010011
+smiling, freq = 1: (336) 00101010000
+amiable, freq = 1: (337) 00101010001
+visited, freq = 1: (342) 00101010110
+offices, freq = 2: (283) 0100011011
+hearted., freq = 1: (343) 00101010111
+Breakfast, freq = 1: (340) 00101010100
+happiness, freq = 1: (341) 00101010101
+frankness., freq = 1: (682) 01010101010
+Met, freq = 1: (683) 01010101011
+Entreaties, freq = 1: (680) 01010101000
+estimating, freq = 1: (681) 01010101001
+cultivated., freq = 1: (686) 01010101110
+additions., freq = 1: (687) 01010101111
+Pronounce, freq = 1: (684) 01010101100
+suspected., freq = 1: (685) 01010101101
+elinor, freq = 1: (674) 01010100010
+temper., freq = 1: (675) 01010100011
+Quiet, freq = 1: (672) 01010100000
+leave, freq = 2: (280) 0100011000
+gay, freq = 2: (281) 0100011001
+large, freq = 1: (673) 01010100001
+Abilities, freq = 1: (678) 01010100110
+perfectly, freq = 1: (679) 01010100111
+pretended, freq = 2: (286) 0100011110
+exquisite., freq = 1: (676) 01010100100
+another, freq = 1: (677) 01010100101
+chamber, freq = 1: (698) 01010111010
+pleased, freq = 1: (699) 01010111011
+imagine, freq = 2: (287) 0100011111
+in., freq = 2: (284) 0100011100
+Went, freq = 1: (696) 01010111000
+loud, freq = 1: (697) 01010111001
+shot, freq = 1: (702) 01010111110
+draw., freq = 1: (703) 01010111111
+Excellent, freq = 1: (700) 01010111100
+smallness., freq = 1: (701) 01010111101
+Removal, freq = 1: (690) 01010110010
+request, freq = 1: (691) 01010110011
+delight, freq = 1: (688) 01010110000
+themselves., freq = 1: (689) 01010110001
+Offended, freq = 1: (694) 01010110110
+consider, freq = 1: (695) 01010110111
+speaking., freq = 1: (692) 01010110100
+Questions, freq = 1: (693) 01010110101
+too, freq = 1: (650) 01010001010
+son., freq = 2: (285) 0100011101
+distant., freq = 1: (651) 01010001011
+Improve, freq = 1: (648) 01010001000
+message, freq = 1: (649) 01010001001
+himself, freq = 1: (654) 01010001110
+cheered, freq = 1: (655) 01010001111
+however, freq = 1: (652) 01010001100
+judge, freq = 1: (653) 01010001101
+first, freq = 1: (642) 01010000010
+chief, freq = 1: (643) 01010000011
+her., freq = 2: (274) 0100010010
+Indeed, freq = 1: (640) 01010000000
+always, freq = 1: (641) 01010000001
+seemed, freq = 1: (646) 01010000110
+narrow, freq = 1: (647) 01010000111
+be., freq = 1: (644) 01010000100
+Instantly, freq = 1: (645) 01010000101
+neglected, freq = 1: (666) 01010011010
+delivered., freq = 1: (667) 01010011011
+Perhaps, freq = 1: (664) 01010011000
+brandon, freq = 1: (665) 01010011001
+cottage., freq = 1: (670) 01010011110
+Fulfilled, freq = 1: (671) 01010011111
+direction, freq = 1: (668) 01010011100
+continual, freq = 1: (669) 01010011101
+propriety, freq = 1: (658) 01010010010
+continued., freq = 1: (659) 01010010011
+Saw, freq = 1: (656) 01010010000
+deficient, freq = 1: (657) 01010010001
+engrossed, freq = 1: (662) 01010010110
+concealed, freq = 1: (663) 01010010111
+Concluded, freq = 1: (660) 01010010100
+perpetual, freq = 1: (661) 01010010101
+supposing., freq = 1: (746) 01011101010
+Farther, freq = 1: (747) 01011101011
+related, freq = 1: (744) 01011101000
+comfort, freq = 1: (745) 01011101001
+civilly., freq = 1: (750) 01011101110
+Dashwoods, freq = 1: (751) 01011101111
+objection, freq = 1: (748) 01011101100
+the., freq = 2: (275) 0100010011
+produced, freq = 1: (749) 01011101101
+prospect, freq = 1: (738) 01011100010
+am., freq = 1: (739) 01011100011
+Placing, freq = 1: (736) 01011100000
+forming, freq = 1: (737) 01011100001
+looking, freq = 1: (742) 01011100110
+married, freq = 1: (743) 01011100111
+Margaret, freq = 1: (740) 01011100100
+disposed, freq = 1: (741) 01011100101
+rendered, freq = 1: (762) 01011111010
+striking, freq = 1: (763) 01011111011
+confined., freq = 1: (760) 01011111000
+It, freq = 1: (761) 01011111001
+furnished, freq = 1: (766) 01011111110
+unwilling, freq = 1: (767) 01011111111
+peculiar, freq = 1: (764) 01011111100
+ham., freq = 1: (765) 01011111101
+Sussex, freq = 1: (754) 01011110010
+really, freq = 1: (755) 01011110011
+elinor., freq = 1: (752) 01011110000
+properly, freq = 1: (753) 01011110001
+Advice, freq = 1: (758) 01011110110
+branch, freq = 1: (759) 01011110111
+living., freq = 1: (756) 01011110100
+disposing, freq = 2: (272) 0100010000
+admitting, freq = 1: (757) 01011110101
+sportsmen, freq = 1: (714) 01011001010
+sportsman., freq = 1: (715) 01011001011
+Their, freq = 1: (712) 01011001000
+widen, freq = 1: (713) 01011001001
+any., freq = 1: (718) 01011001110
+smart, freq = 1: (719) 01011001111
+those, freq = 2: (273) 0100010001
+Am, freq = 1: (716) 01011001100
+wrote, freq = 1: (717) 01011001101
+whole, freq = 1: (706) 01011000010
+tears, freq = 1: (707) 01011000011
+Absolute, freq = 1: (704) 01011000000
+required, freq = 1: (705) 01011000001
+reserved, freq = 2: (278) 0100010110
+How, freq = 1: (710) 01011000110
+found, freq = 1: (711) 01011000111
+again, freq = 1: (708) 01011000100
+taken, freq = 1: (709) 01011000101
+Had, freq = 1: (730) 01011011010
+desirous, freq = 1: (731) 01011011011
+overcame., freq = 1: (728) 01011011000
+Improved, freq = 1: (729) 01011011001
+property, freq = 1: (734) 01011011110
+disposal, freq = 1: (735) 01011011111
+me., freq = 1: (732) 01011011100
+over, freq = 1: (733) 01011011101
+man., freq = 1: (722) 01011010010
+simple, freq = 1: (723) 01011010011
+assure., freq = 1: (720) 01011010000
+Mr, freq = 1: (721) 01011010001
+continued, freq = 1: (726) 01011010110
+arranging, freq = 1: (727) 01011010111
+agreement., freq = 1: (724) 01011010100
+Off, freq = 1: (725) 01011010101
+mistress, freq = 1: (554) 01000101010
+provided, freq = 1: (555) 01000101011
+horrible, freq = 1: (552) 01000101000
+opinions., freq = 1: (553) 01000101001
+Prevailed, freq = 1: (558) 01000101110
+uncommon, freq = 1: (559) 01000101111
+Runtime: 0.030051 seconds
+
+
+Text # chars: 10274
+Storage used: 82192 bits
+New storage : 15182 bits
+ratio       : 82 %
