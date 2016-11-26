@@ -150,6 +150,8 @@ void inttobits(int c, int n, char *s)
   }
 }
 
+
+
 /*
   returns length of string loaded into file and sets buffer equal to path
   takes a double pointer in return to the calling function and set the value of
@@ -192,13 +194,24 @@ void writeCompressedFile(char * targetString, char *fileName, huffcode_t ***dict
   FILE *fp = fopen(fileName,"wb");
   
   //get the size of our alphabet
-  uint32_t alphabetSize = 0;
+  int alphabetSize = 0;
   for(int i=0; i < BYTES; i++) {
     if ( r[i] != NULL ) {
       alphabetSize++;  
     }
   }
   fwrite(&alphabetSize,4,1,fp); 
+
+
+  //get the size of our text in bits
+  int textSize = 0;
+  for(int i =0;i < size; i++){
+      int targetChar = targetString[i];
+      int nBits = r[targetChar] -> nbits;
+      textSize+=nBits;
+  }
+  printf("Text Size:%d\n",textSize);
+  fwrite(&textSize,4,1,fp);
 
   //write the alphabet down in the following way:
   // alphabetnumBitsRepresentbits  where alphabet = 8 bits, numBits = 32 and bitsRepresent = 32 bits  
@@ -236,6 +249,67 @@ void writeCompressedFile(char * targetString, char *fileName, huffcode_t ***dict
   fclose(fp);
 }
 
+
+
+//simple tree data structure used to construct the tree 
+
+typedef struct node {
+    struct node *left;
+    struct node *right;
+    int symbol;
+} node;
+
+//executes an insert of a huffman code into a tree for a particular string
+void insert(int symbol, char *path, int symbolSize ,node * root){
+    node *temp = root;
+
+    //if this is a new node then we just intialize everything to null. 
+    if(temp == NULL){
+	temp = malloc(sizeof(node));
+	temp -> left = NULL;
+	temp -> right = NULL;
+	temp -> symbol = 0;
+    }
+
+    //going left is represented by 1, going right is represented by 0. 
+    for(int i = 0;i<symbolSize;i++){
+	if(path[i]=='0'){
+            if(temp -> left == NULL){
+		temp -> left = malloc(sizeof(node));
+		temp -> left -> right = NULL;
+		temp -> left -> left = NULL;
+	    }	
+	    temp = temp -> left; 
+	}else if(path[i]=='1'){
+	    if(temp -> right == NULL){
+		temp -> right = malloc(sizeof(node));
+		temp -> right -> left = NULL;
+		temp -> right -> right = NULL;
+	    }
+	    temp = temp -> right;
+	}
+	if(i == symbolSize-1){
+	    temp -> symbol = symbol;
+	}else{
+	    temp -> symbol = 0;
+	}
+    }
+}
+
+
+void print(node *root){
+	if(root == NULL){
+	    return;
+	}
+	if(root -> left != NULL){
+		print(root-> left);
+	}
+	printf(" %d ",root -> symbol);
+	if(root -> right != NULL){
+	    print(root->right);
+	}
+}
+
 //uncompress the file 
 void uncompressFile(char * fileName){
 	// open the file pointer
@@ -252,24 +326,42 @@ void uncompressFile(char * fileName){
 	}
 
 	//attempt to read in first 32 bits which represent the size of the alphabet. 
-	uint32_t alphabetSize = 0;
+	int alphabetSize = 0;
 	fread(&alphabetSize,4,1,fp);
 	printf("Alphabet Size Uncompressed: %d\n",alphabetSize);
 
-	//create space in memory for alphabetSize alphabet dictionary
-	huffcode_t **r = malloc(sizeof(huffcode_t *)*BYTES);
+	int textSize = 0;
+	fread(&textSize,4,1,fp);
+	printf("Text Size Uncompressed: %d\n",textSize);
+	
 	
 	char tempchar;
 	int nbits;
 	int symbol;
-	char * strbit = 0;
+	char strbit[MAXBITSPERCODE];
+	node * root = NULL;
+	
+	printf("About to begin reading in values\n");
+	
+	//loops through our items and constructs a tree to help with decoding actual info
 	for(int i = 0; i < alphabetSize;i++){
 		fread(&tempchar,1,1,fp);
 		fread(&nbits,4,1,fp);
 		fread(&symbol,4,1,fp);
-		printf("Symbol:%c NumBits:%d Symbol:%d\n",tempchar,nbits,symbol);	
+		inttobits(symbol,nbits, strbit);
+		printf("In For Loop: Ascii Value: %d NumBits:%d Symbol:%d %s\n",tempchar,nbits,symbol,strbit);
+		insert(symbol,strbit,nbits,&root);	
 	}
+
+	// this is a test to see if the root is null. right now is, not updating.	
+	if(root == NULL){
+	    printf("Root is null\n");
+	}
+	print(root);
+		
 	//done
+	free(root);
+	free(r);
 	fclose(fp);
 }
 
@@ -313,10 +405,17 @@ int main(int argc,char* argv[])
   //the characters in the text
   r = create_huffman_codes(freqs);
 
+  /*for(i=0; i < BYTES; i++) {
+    if ( r[i] != NULL ) {
+      inttobits(r[i]->code, r[i]->nbits, strbit);
+      printf("%c (%d) %s\n", i, r[i]->code, strbit);
+    }
+  }*/
+
+
   writeCompressedFile(p,argv[2],&r,textLength);
 
   uncompressFile(argv[2]);
-  //from here the file should exist. Lets
 
   free_huffman_codes(r);
   clock_t end = clock();
