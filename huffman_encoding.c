@@ -260,55 +260,56 @@ typedef struct node {
 } node;
 
 //executes an insert of a huffman code into a tree for a particular string
-void insert(int symbol, char *path, int symbolSize ,node * root){
-    node *temp = root;
-
-    //if this is a new node then we just intialize everything to null. 
-    if(temp == NULL){
-	temp = malloc(sizeof(node));
-	temp -> left = NULL;
-	temp -> right = NULL;
-	temp -> symbol = 0;
-    }
+void insert(int symbol, char *path, int symbolSize, node **tree){
+    
+    if (*tree == NULL)
+      *tree = malloc(sizeof(node));
+      (*tree) -> left = NULL;
+      (*tree) -> right = NULL;
+      (*tree) -> symbol = 0;
 
     //going left is represented by 1, going right is represented by 0. 
     for(int i = 0;i<symbolSize;i++){
-	if(path[i]=='0'){
-            if(temp -> left == NULL){
-		temp -> left = malloc(sizeof(node));
-		temp -> left -> right = NULL;
-		temp -> left -> left = NULL;
+	     if(path[i]=='0'){
+            if((*tree) -> left == NULL){
+            		(*tree) -> left = malloc(sizeof(node));
+            		(*tree) -> left -> right = NULL;
+            		(*tree) -> left -> left = NULL;
 	    }	
-	    temp = temp -> left; 
+	    *tree = (*tree) -> left; 
 	}else if(path[i]=='1'){
-	    if(temp -> right == NULL){
-		temp -> right = malloc(sizeof(node));
-		temp -> right -> left = NULL;
-		temp -> right -> right = NULL;
+	    if((*tree) -> right == NULL){
+		(*tree) -> right = malloc(sizeof(node));
+		(*tree) -> right -> left = NULL;
+		(*tree) -> right -> right = NULL;
 	    }
-	    temp = temp -> right;
+	    (*tree) = (*tree) -> right;
 	}
 	if(i == symbolSize-1){
-	    temp -> symbol = symbol;
+	    (*tree) -> symbol = symbol;
 	}else{
-	    temp -> symbol = 0;
+	    (*tree) -> symbol = 0;
 	}
     }
+
+    if((*tree) == NULL){
+      printf("In insert temp is null\n");
+  }
 }
 
 
-void print(node *root){
-	if(root == NULL){
-	    return;
-	}
-	if(root -> left != NULL){
-		print(root-> left);
-	}
-	printf(" %d ",root -> symbol);
-	if(root -> right != NULL){
-	    print(root->right);
-	}
-}
+// void print(node **root){
+// 	if(root == NULL){
+// 	    return;
+// 	}
+// 	if(root -> left != NULL){
+// 		print(root-> left);
+// 	}
+// 	printf(" %d ",root -> symbol);
+// 	if(root -> right != NULL){
+// 	    print(root->right);
+// 	}
+// }
 
 //uncompress the file 
 void uncompressFile(char * fileName){
@@ -339,7 +340,7 @@ void uncompressFile(char * fileName){
 	int nbits;
 	int symbol;
 	char strbit[MAXBITSPERCODE];
-	node * root = NULL;
+	node *root;
 	
 	printf("About to begin reading in values\n");
 	
@@ -350,18 +351,18 @@ void uncompressFile(char * fileName){
 		fread(&symbol,4,1,fp);
 		inttobits(symbol,nbits, strbit);
 		printf("In For Loop: Ascii Value: %d NumBits:%d Symbol:%d %s\n",tempchar,nbits,symbol,strbit);
-		insert(symbol,strbit,nbits,&root);	
+		insert(symbol,strbit,nbits, &root);	
 	}
 
 	// this is a test to see if the root is null. right now is, not updating.	
 	if(root == NULL){
 	    printf("Root is null\n");
 	}
-	print(root);
+	//print(root);
 		
 	//done
 	free(root);
-	free(r);
+	// free(r);
 	fclose(fp);
 }
 
@@ -389,7 +390,6 @@ int main(int argc,char* argv[])
   huffcode_t **r;
   int i;
   char strbit[MAXBITSPERCODE];
- 
 
 
   //get the frequency of characters in the text
