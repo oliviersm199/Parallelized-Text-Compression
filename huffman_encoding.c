@@ -189,6 +189,8 @@ int load_file(char * path, char ** bufferPtr){
     If a particular translation for a character has > 32 bits, then the function will not copy
     correctly, since it uses a buffer of 32 bits to write to the file. 
 */
+
+
 void writeCompressedFile(char * targetString, char *fileName, huffcode_t ***dictionary,int size){
   huffcode_t **r = *dictionary;
   FILE *fp = fopen(fileName,"wb");
@@ -260,56 +262,63 @@ typedef struct node {
 } node;
 
 //executes an insert of a huffman code into a tree for a particular string
-void insert(int symbol, char *path, int symbolSize, node **tree){
-    
-    if (*tree == NULL)
-      *tree = malloc(sizeof(node));
-      (*tree) -> left = NULL;
-      (*tree) -> right = NULL;
-      (*tree) -> symbol = 0;
-
+void insert(int symbol, char characterValue, char *path, int symbolSize, node **tree){
+    node *temp = *tree;
     //going left is represented by 1, going right is represented by 0. 
+    printf("Symbol: %d, Path: %s, SymbolSize: %d\n",symbol,path,symbolSize);
+    
     for(int i = 0;i<symbolSize;i++){
-	     if(path[i]=='0'){
-            if((*tree) -> left == NULL){
-            		(*tree) -> left = malloc(sizeof(node));
-            		(*tree) -> left -> right = NULL;
-            		(*tree) -> left -> left = NULL;
+	if(path[i]=='0'){
+	    if(temp -> left == NULL){
+		printf("Left New\n");
+		temp -> left = (node *)malloc(sizeof(node));
+            	temp -> left -> right = NULL;
+            	temp -> left -> left = NULL;
+	    }else{
+		printf("Left\n");
 	    }	
-	    *tree = (*tree) -> left; 
+	    temp = temp -> left; 
 	}else if(path[i]=='1'){
-	    if((*tree) -> right == NULL){
-		(*tree) -> right = malloc(sizeof(node));
-		(*tree) -> right -> left = NULL;
-		(*tree) -> right -> right = NULL;
+	    if(temp -> right == NULL){
+		printf("Right New\n");
+		temp -> right = (node *)malloc(sizeof(node));
+		temp -> right -> left = NULL;
+		temp -> right -> right = NULL;
+	    }else{
+		printf("Right\n");
 	    }
-	    (*tree) = (*tree) -> right;
+	    temp = temp -> right;
 	}
 	if(i == symbolSize-1){
-	    (*tree) -> symbol = symbol;
+	    temp -> symbol = characterValue;
 	}else{
-	    (*tree) -> symbol = 0;
+	    temp -> symbol = 0;
 	}
     }
-
-    if((*tree) == NULL){
-      printf("In insert temp is null\n");
-  }
 }
 
 
-// void print(node **root){
-// 	if(root == NULL){
-// 	    return;
-// 	}
-// 	if(root -> left != NULL){
-// 		print(root-> left);
-// 	}
-// 	printf(" %d ",root -> symbol);
-// 	if(root -> right != NULL){
-// 	    print(root->right);
-// 	}
-// }
+void print(node *root){
+ 	if(root == NULL){
+ 	    return;
+ 	}
+ 	if(root -> left != NULL){
+ 		print(root-> left);
+ 	}
+ 	printf(" %d ",root -> symbol);
+ 	if(root -> right != NULL){
+ 	    print(root->right);
+ 	}
+}
+
+
+
+
+void decompressTree(node * root, FILE **fp,int size,int maxWordSize){
+	//while there are still bits in the file to decode
+	
+}
+
 
 //uncompress the file 
 void uncompressFile(char * fileName){
@@ -341,28 +350,35 @@ void uncompressFile(char * fileName){
 	int symbol;
 	char strbit[MAXBITSPERCODE];
 	node *root;
-	
-	printf("About to begin reading in values\n");
-	
+
+
+	//initializing the tree structure
+	root = (node *)malloc(sizeof(node));
+	root -> symbol = 0;
+	root -> left = NULL;
+	root -> right = NULL;
+
+
+	int maxWordSize = 0;	
 	//loops through our items and constructs a tree to help with decoding actual info
 	for(int i = 0; i < alphabetSize;i++){
 		fread(&tempchar,1,1,fp);
 		fread(&nbits,4,1,fp);
 		fread(&symbol,4,1,fp);
 		inttobits(symbol,nbits, strbit);
-		printf("In For Loop: Ascii Value: %d NumBits:%d Symbol:%d %s\n",tempchar,nbits,symbol,strbit);
-		insert(symbol,strbit,nbits, &root);	
+		insert(symbol,tempchar,strbit,nbits, &root);
+		//updating the maximum word size
+		if(maxWordSize < nbits){
+		    maxWordSize = nbits;
+		}
 	}
+	print(root);
 
-	// this is a test to see if the root is null. right now is, not updating.	
-	if(root == NULL){
-	    printf("Root is null\n");
-	}
-	//print(root);
-		
-	//done
+
+	// actually decoding the text given our constructed tree and the file pointer provided.
+	decompressText(root,&fp,textSize);
+
 	free(root);
-	// free(r);
 	fclose(fp);
 }
 
