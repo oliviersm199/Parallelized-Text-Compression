@@ -26,6 +26,6 @@ void inttobits(int c, int n, char *s);
 char *load_file(char * path);
 void writeCompressedFile(char * targetString, char *fileName, huffcode_t ***dictionary,int size, int BYTES);
 void uncompressFile(char * fileName, int BYTES);
-
+int getOverhead(huffcode_t ***dictionary,int alphabetSize,int segmentSize);
 
 #endif // HUFFMAN_H_

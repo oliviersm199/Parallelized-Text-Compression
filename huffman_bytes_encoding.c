@@ -58,8 +58,6 @@ int bits_encode(char* text_name)
 	//freqs[*p++]++;
   }
 
-  //free memory for text since we already got the frequency and no longer require it.
-  free(text);
 
   e = create_huffman_codes(bitword_freqs, BYTES);
   long int new_storage = 0;
@@ -71,16 +69,25 @@ int bits_encode(char* text_name)
       //printf("%d 	(%d) %s\n", i, e[i]->code, strbit);
     }
   }
+  
+  long int overhead = getOverhead(&e,BYTES,4);
+
+
+  free(text);
   free_huffman_codes(e, BYTES);
 
   clock_t end = clock();
 
   double time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
-  printf("\nBITS >> Runtime     : %f seconds\n", time_spent);
-  printf("BITS >> Text # chars: %d\n",n);
-  printf("BITS >> Storage used: %d bits\n",n*8);
-  printf("BITS >> New storage : %li bits\n", new_storage);
-  printf("BITS >> Ratio       : %li %%\n", (100 - (100* new_storage/(n*8))));
+  
+  printf("\n4 Bits >> Runtime     : %f seconds\n", time_spent);
+  printf("4 Bits >> Text # chars: %d\n",n);
+  printf("4 Bits >> Old: %d bits\n",n*8);
+  printf("4 Bits >> New: %li bits\n", new_storage);
+  printf("4 Bits >> Overhead: %li bits \n",overhead);
+  printf("4 Bits >> Total: %li bits \n",new_storage + overhead);
+  printf("4 Bits >> Ratio       : %li %%\n", (100 - (100* (new_storage+overhead)/(n*8))));
+
   return 0;
 }
                                                                                                                     

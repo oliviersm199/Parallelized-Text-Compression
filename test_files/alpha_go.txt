@@ -1,0 +1,28 @@
+It was almost 20 years ago that IBM's Deep Blue computer defeated the world's most accomplished chess grandmaster, Garry Kasparov, in a six-game match. Hailed as a milestone in the long development path of AI (artificial intelligence), the victory captured worldwide attention-some of it more than a little nervous about the wisdom of creating really smart machines.
+
+In the intervening two decades, the ancient game of Go has remained beyond the competitive reach of AI. The 2,500-year-old board game from China is more complex than chess and isn't as vulnerable to deep look-ahead searches. It's been described as a game of perfect information-one that doesn't depend on luck or hidden moves. While chess is more logic-based, Go is intuitive. And it stayed unreachable despite AI's success against checkers, backgammon, poker, and even TV's Jeopardy, whose human champions fell to IBM's Watson in 2011. Why so much attention on games as developmental benchmarks? In a nutshell, most of our classic games resemble human microcosms wherein intelligence and judgment prosper.
+
+The rules of Go are elegantly simple. Each piece, called a stone, has the same value, one point, and once placed on the board, the stone doesn't move. You place your stones on the intersections of the lines, attempting to wall off the most territory on the board before game's end. You can surround and capture pieces, but the point is to control open spaces.
+
+Unlike the chess board with its 64 spaces, the stones in Go are placed where the lines intersect at 361 crossing points. Actually, the Go board creates a nearly infinite playing space with the average-length game offering more possible board configurations (10170) than there are atoms in the universe.
+
+For the Deep Blue programmers, the goal was to provide rapid, exhaustive, branching searches of consequences for each considered chess move, well beyond the point where the human, Kasparov, would be thinking ahead. But even that strategy would fail to defeat a human Go grandmaster. That is, until last fall.
+
+In October, a program called AlphaGo played the current European Go champion, Fan Hui, in London, and the computer beat Hui 5-0 in the fivegame match. Now, the ultimate test of the program is scheduled for this month (March 9-15) with AlphaGo facing the world champion, Lee Sedol, in a five-game match in South Korea. Google, the owner of AlphaGo, will stream the games live over its YouTube broadcasting network, and the winner will take home $1 million. If Google's AlphaGo program wins, the money will be donated to charity.
+
+Google purchased the London-based developer of AlphaGo DeepMind Technologies in 2014. CEO Demis Hassabis differentiates the program from others like Deep Blue: "AlphaGo isn't just an expert system built with handcrafted rules; instead it uses general machine learning techniques to figure out for itself how to win at Go."
+
+NEURAL NETS AND DEEP LEARNING
+
+AI has generally evolved along the lines of two different schools: symbol-based GOFAI (Good, Old-Fashioned Artificial Intelligence) and neural networks, which combine multiple processors in a system that imitates the way a brain operates.
+
+AlphaGo combines both expert systems and deep learning. Nature magazine published a paper on January 27, 2016, titled "Mastering the Game of Go with Deep Neural Networks and Tree Search," essentially releasing, as open source, the methods and formulas used by the DeepMind researchers.
+
+In earlier game experiments, Hassabis's team used a novel approach for preparing the computers. Working their way through 49 different arcade games, they set up the computer to learn the game's patterns and rewards using a general-purpose algorithm, and then they'd let it play. The computer would be left on all night clicking away at a game like Bricks and learning tactics for improving its score on its own.
+
+According to the Nature paper, AlphaGo combined expert systems, deep learning, reinforced learning, and Monte Carlo searches. The computer learned the rules and basic strategies of the game. Then its two neural networks strengthened the program. "It first studied 30 million positions from expert games, gleaning abstract information on the state of play from board data....Then it played against itself across 50 computers, improving with each iteration, a technique known as reinforcement learning." Eventually it was playing at a level that appeared to be almost intuitive. In one of the Nature blogs, the editors pointed out the irony that "AlphaGo cannot explain how it [the program] chooses its moves, but its programmers are more open than Deep Blue's in publishing how it's built."
+
+With the release of the programming to other neuroscientists and computer engineers, now the Go players have come forward and, seated at their computers, they await the million-dollar match. SF
+
+Sidebar
+"I know AlphaGo is a computer, but if no one told me, maybe I would think the player was a little strange, but a very strong player, a real person.

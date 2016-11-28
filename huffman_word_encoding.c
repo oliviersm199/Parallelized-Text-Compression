@@ -98,6 +98,7 @@ int word_encode(char* text_name)
  
   r = create_huffman_codes(freqs, BYTES);
   long int new_storage = 0;
+  long int overhead = 0; 
 
   for(i=0; i < BYTES; i++) {
     if ( r[i] != NULL ) {
@@ -105,6 +106,9 @@ int word_encode(char* text_name)
       inttobits(r[i]->code, r[i]->nbits, strbit);
       new_storage += freqs[i]*strlen(strbit);
       //printf("%s (%d) %s\n", words[i], r[i]->code, strbit);
+      overhead += (strlen(words[i]) * 8); // need to store the actual word, character by character  
+      overhead += 5; // need to store how many bits in code
+      overhead += (r[i] -> nbits); // and store actual bits
     }
   }
  
@@ -113,10 +117,12 @@ int word_encode(char* text_name)
   clock_t end = clock();
 
   double time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
-  printf("\nWORDS >> Runtime: %f seconds\n", time_spent);
-  printf("WORDS >> Text # chars: %d\n",size);
-  printf("WORDS >> Storage used: %d bits\n",size*8);
-  printf("WORDS >> New storage : %li bits\n", new_storage);
-  printf("WORDS >> Ratio       : %li %%\n", (100 - (100* new_storage/(size*8))));
+  printf("\nWords >> Runtime     : %f seconds\n", time_spent);
+  printf("Words >> Text # chars: %d\n",size);
+  printf("Words >> Old: %d bits\n",size*8);
+  printf("Words >> New: %li bits\n", new_storage);
+  printf("Words >> Overhead: %li bits \n",overhead);
+  printf("Words >> Total: %li bits \n",new_storage + overhead);
+  printf("Words >> Ratio       : %li %%\n", (100 - (100* (new_storage+overhead)/(size*8))));
   return 0;
 }

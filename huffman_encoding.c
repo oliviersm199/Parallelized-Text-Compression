@@ -45,15 +45,25 @@ int regular_encode(char* text_name)
       //printf("%d 	(%d) %s\n", i, e[i]->code, strbit);
     }
   }
+  
+
+  long int overhead = getOverhead(&r,BYTES,8);
+  
   free_huffman_codes(r, BYTES);
+
+  
+
 
   clock_t end = clock();
 
   double time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
-  printf("\nNORMAL >> Runtime: %f seconds\n", time_spent);
-  printf("NORMAL >> Text # chars: %d\n",n);
-  printf("NORMAL >> Storage used: %d bits\n",n*8);
-  printf("NORMAL >> New storage : %li bits\n", new_storage);
-  printf("NORMAL >> ratio       : %li %%\n", (100 - (100* new_storage/(n*8))));
+  
+  printf("\n8 Bits >> Runtime     : %f seconds\n", time_spent);
+  printf("8 Bits >> Text # chars: %d\n",n);
+  printf("8 Bits >> Old: %d bits\n",n*8);
+  printf("8 Bits >> New: %li bits\n", new_storage);
+  printf("8 Bits >> Overhead: %li bits \n",overhead);
+  printf("8 Bits >> Total: %li bits \n",new_storage + overhead);
+  printf("8 Bits >> Ratio       : %li %%\n", (100 - (100* (new_storage+overhead)/(n*8))));
   return 0;
 }

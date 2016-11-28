@@ -160,11 +160,23 @@ char *load_file(char * path){
   return buffer;
 }
 
-/*
-    This function will write a string to a file using our huffman encoding, writing byte by byte.
-    If a particular translation for a character has > 32 bits, then the function will not copy
-    correctly, since it uses a buffer of 32 bits to write to the file. 
-*/
+//segment size must be in bits. returns overhead associated with encoding
+int getOverhead(huffcode_t ***dictionary,int alphabetSize,int segmentSize){
+    huffcode_t **r = *dictionary;
+    long int additionalBits = 0;
+    for(int i = 0; i < alphabetSize;i++){
+	if( r[i] != NULL){
+	    additionalBits += segmentSize; //need to store the symbol in the dictionary
+	    additionalBits += 5; // need to store a 5 bit symbol which corresponds to max number of bits being used (32 is max) 
+	    additionalBits += r[i] -> nbits; // need to store the actual bits
+	}
+    }
+    return additionalBits;
+}
+
+
+
+
 void writeCompressedFile(char * targetString, char *fileName, huffcode_t ***dictionary,int size, int BYTES){
   huffcode_t **r = *dictionary;
   FILE *fp = fopen(fileName,"wb");
