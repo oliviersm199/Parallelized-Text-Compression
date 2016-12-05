@@ -66,7 +66,7 @@ int bits_encode(char* text_name)
     if(e[i] != NULL){
       inttobits(e[i]->code, e[i]->nbits, strbit);
       new_storage += bitword_freqs[i]*strlen(strbit);
-      //printf("%d 	(%d) %s\n", i, e[i]->code, strbit);
+      //printf("4Bits: %d,(%d),%s,%li\n", i, e[i]->code,strbit,bitword_freqs[i]);
     }
   }
   

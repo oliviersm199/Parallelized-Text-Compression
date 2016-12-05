@@ -105,7 +105,7 @@ int word_encode(char* text_name)
       //printf("%ld\n", freqs[i]);
       inttobits(r[i]->code, r[i]->nbits, strbit);
       new_storage += freqs[i]*strlen(strbit);
-      //printf("%s (%d) %s\n", words[i], r[i]->code, strbit);
+      //printf("Words:%s,%d,%s,%li\n", words[i], r[i]->code, strbit,freqs[i]);
       overhead += (strlen(words[i]) * 8); // need to store the actual word, character by character  
       overhead += 5; // need to store how many bits in code
       overhead += (r[i] -> nbits); // and store actual bits

@@ -42,7 +42,7 @@ int regular_encode(char* text_name)
     if(r[i] != NULL){
       inttobits(r[i]->code, r[i]->nbits, strbit);
       new_storage += freqs[i]*strlen(strbit);
-      //printf("%d 	(%d) %s\n", i, e[i]->code, strbit);
+      //printf("8Bits:%d,%d,%s,%li\n", i, r[i]->code, strbit,freqs[i]);
     }
   }
   
