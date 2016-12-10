@@ -66,11 +66,11 @@ int calculate_frequencies(char *str, long *freqs, char words[BYTES][500], int si
     }
 }
 
-int word_encode(char* text_name)
+int word_encode(char* text_name,char * textInput)
 {
   clock_t begin = clock();
   //loading the file into memory 
-  char *text = load_file(text_name);
+  char *text = textInput;
   
   huffcode_t **r; 
   int i;
@@ -91,9 +91,6 @@ int word_encode(char* text_name)
 
  // while(*p != '\0') freqs[*p++]++;
   calculate_frequencies(text, freqs, words, size);
-
-  //free memory for text since we already got the frequency and no longer require it.
-  free(text);
 
  
   r = create_huffman_codes(freqs, BYTES);
@@ -117,12 +114,13 @@ int word_encode(char* text_name)
   clock_t end = clock();
 
   double time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
-  printf("\nWords >> Runtime     : %f seconds\n", time_spent);
-  printf("Words >> Text # chars: %d\n",size);
-  printf("Words >> Old: %d bits\n",size*8);
-  printf("Words >> New: %li bits\n", new_storage);
-  printf("Words >> Overhead: %li bits \n",overhead);
-  printf("Words >> Total: %li bits \n",new_storage + overhead);
-  printf("Words >> Ratio       : %li %%\n", (100 - (100* (new_storage+overhead)/(size*8))));
-  return 0;
+  //printf("\nWords >> Runtime     : %f seconds\n", time_spent);
+  //printf("Words >> Text # chars: %d\n",size);
+  //printf("Words >> Old: %d bits\n",size*8);
+  //printf("Words >> New: %li bits\n", new_storage);
+  //printf("Words >> Overhead: %li bits \n",overhead);
+  //printf("Words >> Total: %li bits \n",new_storage + overhead);
+  //printf("Words >> Ratio       : %li %%\n", (100 - (100* (new_storage+overhead)/(size*8))));
+  
+  return (new_storage + overhead);
 }

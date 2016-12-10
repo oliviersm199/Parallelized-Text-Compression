@@ -10,7 +10,7 @@
 
 // Sequential Implementation of Huffman Encoding sourced from Rosetta Code
 
-int regular_encode(char* text_name)
+long int regular_encode(char* text_name, char* textInput)
 {
   clock_t begin = clock();
   int BYTES = 256;
@@ -21,7 +21,7 @@ int regular_encode(char* text_name)
   int i;
   char strbit[MAXBITSPERCODE];
 
-  char *text = load_file(text_name);
+  char *text = textInput;
   p = text;
   int n = strlen(p);
   //get the frequency of characters in the text
@@ -58,12 +58,12 @@ int regular_encode(char* text_name)
 
   double time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
   
-  printf("\n8 Bits >> Runtime     : %f seconds\n", time_spent);
-  printf("8 Bits >> Text # chars: %d\n",n);
-  printf("8 Bits >> Old: %d bits\n",n*8);
-  printf("8 Bits >> New: %li bits\n", new_storage);
-  printf("8 Bits >> Overhead: %li bits \n",overhead);
-  printf("8 Bits >> Total: %li bits \n",new_storage + overhead);
-  printf("8 Bits >> Ratio       : %li %%\n", (100 - (100* (new_storage+overhead)/(n*8))));
-  return 0;
+  //printf("\n8 Bits >> Runtime     : %f seconds\n", time_spent);
+  //printf("8 Bits >> Text # chars: %d\n",n);
+  //printf("8 Bits >> Old: %d bits\n",n*8);
+  //printf("8 Bits >> New: %li bits\n", new_storage);
+  //printf("8 Bits >> Overhead: %li bits \n",overhead);
+  //printf("8 Bits >> Total: %li bits \n",new_storage + overhead);
+  //printf("8 Bits >> Ratio       : %li %%\n", (100 - (100* (new_storage+overhead)/(n*8))));
+  return new_storage + overhead;
 }

@@ -10,11 +10,10 @@
 
 #define BYTES 65336
 
-int bytes_encode(char* text_name)
+long int bytes_encode(char* text_name,char * textInput)
 {
   clock_t begin = clock();
-  //loading the file into memory
-  char *text = load_file(text_name);
+  char *text = textInput;
   int num_bits = 2;
 
   huffcode_t **r, **e;
@@ -46,10 +45,6 @@ int bytes_encode(char* text_name)
 	
   }
 
- 
-
-
-
   e = create_huffman_codes(bitword_freqs, BYTES);
   long int new_storage = 0;
 
@@ -64,22 +59,19 @@ int bytes_encode(char* text_name)
   long int overhead = getOverhead(&e,BYTES,16);
 
   //free memory for text since we already got the frequency and no longer require it.
-  free(text);
 
-
-
-  clock_t end = clock();
   free_huffman_codes(e, BYTES);
+  clock_t end = clock(); 
   
   double time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
-  printf("\n16 Bits >> Runtime     : %f seconds\n", time_spent);
-  printf("16 Bits >> Text # chars: %d\n",n);
-  printf("16 Bits >> Old: %d bits\n",n*8);
-  printf("16 Bits >> New: %li bits\n", new_storage);
-  printf("16 Bits >> Overhead: %li bits \n",overhead);
-  printf("16 Bits >> Total: %li bits \n",new_storage + overhead);
-  printf("16 Bits >> Ratio       : %li %%\n", (100 - (100* (new_storage+overhead)/(n*8))));
+  //printf("\n16 Bits >> Runtime     : %f seconds\n", time_spent);
+  //printf("16 Bits >> Text # chars: %d\n",n);
+  //printf("16 Bits >> Old: %d bits\n",n*8);
+  //printf("16 Bits >> New: %li bits\n", new_storage);
+  //printf("16 Bits >> Overhead: %li bits \n",overhead);
+  //printf("16 Bits >> Total: %li bits \n",new_storage + overhead);
+  //printf("16 Bits >> Ratio       : %li %%\n", (100 - (100* (new_storage+overhead)/(n*8))));
 
-  return 0;
+  return (new_storage+overhead);
 }
                                                                                                                     

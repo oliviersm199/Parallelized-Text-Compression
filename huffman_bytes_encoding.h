@@ -4,4 +4,4 @@
 #include <unistd.h>
 #include <math.h>
 
-int bits_encode(char* text_name);
+long int bits_encode(char* text_name,char* textInput);

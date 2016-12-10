@@ -10,11 +10,11 @@
 
 #define BYTES 16
 
-int bits_encode(char* text_name)
+long int bits_encode(char* text_name, char* textInput)
 {
   clock_t begin = clock();
   //loading the file into memory
-  char *text = load_file(text_name);
+  char *text = textInput;
 
   huffcode_t **r, **e;
   int i;
@@ -73,21 +73,20 @@ int bits_encode(char* text_name)
   long int overhead = getOverhead(&e,BYTES,4);
 
 
-  free(text);
   free_huffman_codes(e, BYTES);
 
   clock_t end = clock();
 
   double time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
   
-  printf("\n4 Bits >> Runtime     : %f seconds\n", time_spent);
-  printf("4 Bits >> Text # chars: %d\n",n);
-  printf("4 Bits >> Old: %d bits\n",n*8);
-  printf("4 Bits >> New: %li bits\n", new_storage);
-  printf("4 Bits >> Overhead: %li bits \n",overhead);
-  printf("4 Bits >> Total: %li bits \n",new_storage + overhead);
-  printf("4 Bits >> Ratio       : %li %%\n", (100 - (100* (new_storage+overhead)/(n*8))));
+  //printf("\n4 Bits >> Runtime     : %f seconds\n", time_spent);
+  //printf("4 Bits >> Text # chars: %d\n",n);
+  //printf("4 Bits >> Old: %d bits\n",n*8);
+  //printf("4 Bits >> New: %li bits\n", new_storage);
+  //printf("4 Bits >> Overhead: %li bits \n",overhead);
+  //printf("4 Bits >> Total: %li bits \n",new_storage + overhead);
+  //printf("4 Bits >> Ratio       : %li %%\n", (100 - (100* (new_storage+overhead)/(n*8))));
 
-  return 0;
+  return (new_storage+overhead);
 }
                                                                                                                     

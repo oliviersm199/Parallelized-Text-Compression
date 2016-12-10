@@ -442,7 +442,7 @@ FILE *In, *Out;
 unsigned char ArcBit = 0;
 int ArcChar = 0;
 
-int main (int argc, char **argv)
+long int vitter(int argc, char **argv)
 {
     
     clock_t begin = clock();
@@ -572,10 +572,10 @@ int main (int argc, char **argv)
     //getting the correspondnig file sizes
 
     fseek(In,0L,SEEK_END);
-    int pastSz = ftell(In);
+    long int pastSz = ftell(In);
     
     fseek(Out,0L,SEEK_END);
-    int sz = ftell(Out);
+    long int sz = ftell(Out);
     
     clock_t end = clock();
     double time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
@@ -595,8 +595,7 @@ int main (int argc, char **argv)
       perror("Error");
     }    
 
-
-    return 0;
+    return sz;
 }
 
 void arc_put1 (unsigned bit)
