@@ -34,7 +34,6 @@ int main(int argc, char* argv[])
   char * text = load_file(argv[1]);
   int numThreads = atoi(argv[2]);
 
-  for(int j = 0; j<1000;j++){
 	#pragma omp parallel num_threads(numThreads) 
   	{
 		int thread_id = omp_get_thread_num();
@@ -62,9 +61,8 @@ int main(int argc, char* argv[])
 					strategyName = "Words";
 					break; 
 			}
-			//printf("Result: %s,  %li\n",strategyName,localResult);
+			printf("Result: %s,  %li\n",strategyName,localResult);
 		}
-  	}
     }
     free(text);
 }

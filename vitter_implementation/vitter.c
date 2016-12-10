@@ -442,7 +442,7 @@ FILE *In, *Out;
 unsigned char ArcBit = 0;
 int ArcChar = 0;
 
-long int vitter(int argc, char **argv)
+int main(int argc, char **argv)
 {
     
     clock_t begin = clock();
@@ -581,9 +581,9 @@ long int vitter(int argc, char **argv)
     double time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
  
     printf("\nVitter >> Runtime     : %f seconds\n", time_spent);
-    printf("Vitter >> Old: %d bits\n",pastSz*8);
-    printf("Vitter >> New: %d bits\n", sz*8);
-    printf("Vitter >> Ratio       : %d %%\n", (100 - (100* (sz*8)/(pastSz*8))));
+    printf("Vitter >> Old: %li bits\n",pastSz*8);
+    printf("Vitter >> New: %li bits\n", sz*8);
+    printf("Vitter >> Ratio       : %li %%\n", (100 - (100* (sz*8)/(pastSz*8))));
 
     //clean up and delete the new file created
     int status = 0;
@@ -595,7 +595,7 @@ long int vitter(int argc, char **argv)
       perror("Error");
     }    
 
-    return sz;
+    return 0;
 }
 
 void arc_put1 (unsigned bit)

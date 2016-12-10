@@ -1,6 +1,6 @@
-all: parallel strategy
+all: freqParallel sequential strategy zip vitter
 
-parallel: huffman_encoding_parallel.c
+freqParallel: huffman_encoding_parallel.c
 	gcc -fopenmp $^ -o $@
 
 sequential: strategy_seq.c
@@ -8,9 +8,11 @@ sequential: strategy_seq.c
 
 
 strategy: strategy_parallelization.c
-
 	gcc huffman.c $^ huffman_2bytes_encoding.c huffman_bytes_encoding.c huffman_encoding.c huffman_word_encoding.c -fopenmp -o $@ -lm
 
-clean:
-	-rm parallel strategy *.o
+zip: zip.c
+	gcc zip.c -o zipCompress
+
+vitter: vitter_implementation/vitter.c
+	gcc vitter_implementation/vitter.c -o vitter
 

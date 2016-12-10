@@ -1,3 +1,7 @@
 a.out
 sftp-config.json
 strategy
+freqParallel
+sequential
+vitter
+zipCompress

@@ -9,6 +9,7 @@
 #include "huffman_encoding.h"
 #include "huffman_bytes_encoding.h"
 #include "huffman_2bytes_encoding.h"
+#include "huffman.h"
 
 int main(int argc, char* argv[])
 {
@@ -24,23 +25,14 @@ int main(int argc, char* argv[])
     exit(-2);
   }
 
- // #pragma omp parallel num_threads(1)
-//  {
-//	int thread_id = omp_get_thread_num();
-    //printf("%d", thread_id);
-//	switch(thread_id){
-//		case 0:
-			regular_encode(argv[1]);
-//			break;
-//		case 1:
-			bytes_encode(argv[1]);
-//			break;
-//		case 2:
-			bits_encode(argv[1]);
-//			break;
-//		case 3:
-			word_encode(argv[1]);
-//			break; 
-//	}
- // }
+  char * text = load_file(argv[1]);
+
+  long int resultRegular = regular_encode(argv[1],text);
+  long int resultBytes = bytes_encode(argv[1],text);
+  long int resultBits = bits_encode(argv[1],text);
+  long int resultWords = word_encode(argv[1],text);
+  printf("8 Bits: %li\n",resultRegular);
+  printf("16 Bits: %li\n",resultBytes);
+  printf("4 Bits: %li\n",resultBits);
+  printf("Words: %li\n",resultWords);
 }
